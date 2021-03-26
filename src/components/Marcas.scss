@@ -1,0 +1,80 @@
+.container-marcas{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: auto;
+
+    .titulo-marcas{
+      color:black;
+      width:288px ;
+      height:48px ;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+      padding-top: 40px;
+
+    }
+
+    .marcas-texto{
+      color:black;
+      width:288px ;
+      height:144px ;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24,38px;
+      text-align: center;
+      margin-top: 45px;
+    }
+
+    .btn-agendar-marcas{
+      width: 136px;
+      height: 24px;
+      position: relative;
+      cursor: pointer;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 24,38px;
+      border-bottom-color: rgba(255, 120, 144, 1);
+      border-bottom-style: inset ;
+      margin-top:30px;
+    }
+
+    /* .logos */
+      display: flex;
+      flex-direction: column;
+      align-content: space-around;
+
+      .opi{
+        width: 158px;
+        height: 49.01px;
+        margin: 70px 86px 40px 76px;
+      }
+
+      .gelish{
+        width: 159.02px;
+        height: 82.94px;
+        margin: 0px 80.99px 10px 79.9px;
+      }
+
+      .renpho{
+        width: 158px;
+        height: 29.98px;
+        margin: 30px 90px 30px 85px;
+      }
+
+}
+
+.btn-agendar{
+  margin: 40px auto 0;
+  position: relative;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  border-bottom-color: white;
+  border-bottom-style: inset ;
+  padding-bottom: 5px;
+
+}

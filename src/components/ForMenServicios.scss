@@ -1,0 +1,137 @@
+/* MAIN CONTAINER */
+.mens-container-serv{
+  background: black;
+  width: 100vw;
+  height: auto;
+  display: flex;
+
+  div.for-men-serv{
+    width: 100vw;
+    color:white;
+    margin: 40px 16px;
+    align-items: center;
+    flex-flow: column;
+    display: flex;
+    justify-content: start;
+  }
+
+    /* .for-men-serv{
+      color: white;
+    } */
+
+    .for-word{
+      font-size: 50px;
+      font-weight: 700;
+      color: white;
+
+    }
+
+    .men-word{
+      font-size: 50px;
+      font-weight: 500;
+      color: white;
+    }
+    .linea{
+      border-top-style: outset;
+      width: 288px;
+      border-top-width: 2px;
+      border-top-color: white;
+      margin: 40px 16px;
+
+    }
+
+    .servicio-hombre-blanco{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: start;
+      width: 288px;
+      height: 285px;
+      background-color: white;
+      color: black;
+
+      .combo-spa-front{
+        color:black;
+        width: 256px;
+        height: 74px;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 36.57px;
+        margin-top: 40px;
+      }
+
+      .price{
+        color:black;
+        width: 102px;
+        height: 49px;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48.76px;
+        margin-top: 10px;
+      }
+
+      .btn-info-blanco{
+        width: 176px;
+        height: 24px;
+        background: transparent;
+        font-size: 20px;
+        font-weight: 700;
+        color:black;
+        border-bottom-color:transparent;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-left-color: transparent;
+        margin-top: 40px;
+      }
+
+
+    }
+
+
+
+}
+
+.services-back-men{
+  color: black;
+  background-color: white;
+  width: 288px;
+  height: 285px;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+
+
+    .titulo{
+      width: 268px;
+      height: 24px;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 24px;
+    }
+
+    .txt-back{
+      width: 268px;
+      height: 51px;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 17px;
+    }
+
+    .flechas-black{
+      width: 20px;
+      height: 20px;
+
+
+    }
+}
+
+@media (min-width: 1152px){
+div.mens-container {
+grid-template-columns: 1fr 2fr;
+    padding: 100px 0;
+    max-width: 1050px;
+    width: 100%;
+    margin: auto;
+  }
+}

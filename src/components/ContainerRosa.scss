@@ -1,0 +1,36 @@
+.cont-rosa{
+  width: 100vw;
+  height: 722px;
+  background-color: rgba(255, 120, 144, 1);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  padding: 40px 16px;
+
+    .serv-indiv{
+      width: 288px;
+      height: 74px;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 36.57px;
+    }
+
+    .subtitulos-rosa{
+      width: auto;
+      height: 24px;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    .texto-rosa{
+      width: 288px;
+      height: auto;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+    }
+}

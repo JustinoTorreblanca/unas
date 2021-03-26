@@ -1,0 +1,44 @@
+.img-friends{
+  width: 100vw;
+  height: 284px;
+}
+
+.container-friends{
+  width: 100vw;
+  height: auto;
+  padding: 31px 16px;
+
+    .titulo-friends{
+      color:black;
+      width: 288px;
+      height: 24px;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 10px;
+    }
+
+    .tres-amigas{
+      color:black;
+      width: 288px;
+      height: 120px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 30px;
+
+
+    }
+    .btn-agendar-amigas{
+      width: 136px;
+      height: 24px;
+      position: relative;
+      cursor: pointer;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 24,38px;
+      border-bottom-color: rgba(255, 120, 144, 1);
+      border-bottom-style: inset ;
+
+    }
+}
