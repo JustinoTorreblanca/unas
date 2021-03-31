@@ -1,0 +1,353 @@
+.agendar-container{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-self: start;
+  background-color:#E5E5E5;
+
+  .container-pasos{
+    display: flex;
+    margin: 222px 258px 24px 258px;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+    .zona{
+      display: flex;
+      width: 924px;
+      height: auto;
+
+      .titulo-zona{
+        width: 924px;
+        height: 72px;
+        background-color: rgba(194, 135, 142, 1);
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 36.57px;
+        text-align: center;
+        color: white;
+        padding: 18px 0;
+      }
+
+      .flecha-pasos{
+        width: 17.41px;
+        height: 8.32px;
+        margin: 31.42px 30px 0px -67.29px;
+      }
+    }
+    .wrap-radio-buttons{
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column;
+      background-color: white;
+      width: 924px;
+      height: 200px;
+    }
+
+    .primera-seccion{
+      width: 673px;
+      height: 24px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+    .segunda-seccion{
+      width: 673px;
+      height: 24px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+    .tercera-seccion{
+      width: 325px;
+      height: 24px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin:-px 300px -px 299px;
+    }
+  }
+
+  .container-dia{
+    display: flex;
+    margin: 0px 258px 24px 258px;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    .zona-dia{
+      display: flex;
+      width: 924px;
+      height: auto;
+      margin-bottom: 40px;
+    }
+    .titulo-dia{
+      width: 924px;
+      height: 72px;
+      background-color: rgba(194, 135, 142, 1);
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 36.57px;
+      text-align: center;
+      color: white;
+      padding: 18px 0;
+    }
+    .flecha-pasos{
+        width: 17.41px;
+        height: 8.32px;
+        margin: 31.42px 30px 0px -67.29px;
+      }
+  }
+
+  .container-registro{
+    display: flex;
+    margin: 0px 258px 24px 258px;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .registro-persona{
+    display: flex;
+      width: 924px;
+      height: auto;
+      margin-bottom: 40px;
+  }
+  .titulo-registro, .container-datos-regalo{
+    width: 924px;
+    height: 72px;
+    background-color: rgba(194, 135, 142, 1);
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36.57px;
+    text-align: center;
+    color: white;
+    padding: 18px 0;
+  }
+  .flecha-pasos{
+    width: 17.41px;
+    height: 8.32px;
+    margin: 31.42px 30px 0px -67.29px;
+  }
+
+  .nombre-cliente{
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36.7px;
+  }
+  .otra-persona{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(199, 199, 199, 1);
+  }
+  .nombre-cliente-container{
+    width: 696px;
+    height: 37px;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 72px;
+  }
+  .form-servicio{
+    display: flex;
+    flex-direction: column;
+    width: 610px;
+  }
+  .dropdown-servicio{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    height: 24px;
+  }
+  .opciones-servicio{
+    width: 610px;
+    height: 40px;
+  }
+
+  .wrap-horario{
+    display:flex;
+    flex-direction: row;
+    width: 610px;
+    justify-content: space-between;
+  }
+
+  .contenedor-quien{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    width: auto;
+  }
+  .contenedor-horario{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    width: auto;
+  }
+  .opciones-horario{
+    width: 292px;
+    height: 40px;
+  }
+  .dropdown-horario{
+    height: 24px;
+    margin-left: -230px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .opciones-quien{
+    width: 294px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .dropdown-quien{
+    width:287px;
+    height: 24px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .icono-otra-persona{
+    width: 20px;
+    height: 20px;
+    margin-left: 224px;
+  }
+  .txt-agregar-persona{
+    margin-top:64px;
+    margin-left: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .wrap-calendar{
+    background-color:white;
+    width: 924px;
+    height: 350px;
+    margin-top:-38px;
+    justify-content:center;
+    display: flex;
+    align-items:center;
+  }
+  .wrap-nombre{
+    background-color:white;
+    width: 924px;
+    height: 490px;
+    margin-top: -38px;
+    padding: 40px 64px 64px 150px;
+  }
+  .es-regalo{
+    width: 924px;
+    height: 72px;
+    background-color: white;
+    color:black;
+    display: flex;
+    justify-content: center;
+    padding: 17px 267px;
+
+  }
+  .si-no{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-left: 24px;
+    padding-top: 5px;
+  }
+  .regalo-txt{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36.5px;
+  }
+  /* PASOS PARA REGALO */
+  .container-datos-regalo{
+    margin: 24px 0px;
+  }
+
+
+  .wrap-pasos-regalo{
+    background-color:white;
+    width: 924px;
+    height: 248px;
+    display: flex;
+    align-items:center;
+    flex-direction:row;
+    justify-content:center;
+    font-weight: 500;
+    font-size:20px;
+    line-height:24px;
+    color:black;
+    margin-bottom:24px;
+  }
+  .container-nombre-regalo{
+    width: 292px;
+    height: auto;
+    margin-right: 24px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: self-start;
+    margin-top:-40px;
+  }
+
+  .container-correo-pasos{
+    width: 292px;
+    height: auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: self-start;
+    margin-top:-40px;
+  }
+  .container-direccion-pasos{
+    width: 608px;
+    height: auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: self-start;
+    margin-top:-124px;
+    margin-left:158px;
+    font-weight: 500;
+    font-size:20px;
+    line-height:24px;
+    color:black;
+  }
+  .nombre-regalo-inpt, .correo-regalo-inpt{
+    width: 292px;
+    height: 40px;
+  }
+  .direccion-regalo-inpt{
+    width: 608px;
+    height: 40px;
+  }
+
+  .anchor-pasos{
+    text-decoration: none;
+    color:white
+  }
+  .agendar-guardar-pasos{
+    width: 289px;
+    height: 72px;
+    color: white;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    background-color: rgba(255, 120, 144, 1);
+    border-color: transparent;
+    margin: 120px 576px 120px 575px;
+  }
+  .radio-button{
+    width: 20px;
+    height: 20px;
+  }
+
+}

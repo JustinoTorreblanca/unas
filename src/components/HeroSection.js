@@ -1,9 +1,12 @@
 import React from "react";
 import "../App.css";
 import "./HeroSection.css";
-import Scroll from "../components/Scroll.component";
-/* import { Link } from "react-router-dom"; */
+/* import Scroll from "../components/Scroll.component"; */
+import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
+import scrll from "../images/scrll.png";
+import Agendar from "./Agendar.component";
+
 
 function HeroSection() {
   return (
@@ -28,21 +31,26 @@ function HeroSection() {
             className="email"
             placeholder="✉ Ingresa tu correo electrónico"
           />
-          <input
-            type="button"
-            className="agendar-cita"
-            value="Agendar cita"
-            href="/"
-          />
+          <Link to="/agendar-cita" className="link-agendar-cita">
+                  <button
+                    type="button"
+                    className="agendar-cita"
+                    value="Agendar cita"
+                    /* href="/agendar-cita"
+                    onClick={Agendar} */
+                  >Agendar cita</button>
+
+          </Link>
 
           <input
             type="button"
             className="inicia-sesion"
             value="o inicia sesión"
-            href="/"
+            href="/agendar-cita"
           />
           <p className="scrll">Scroll</p>
-          <Scroll />
+          <img src={scrll} alt="scroll" />
+          {/* <Scroll /> */}
         </div>
       </div>
     </div>

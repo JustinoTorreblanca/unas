@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ReactCardFlip from "react-card-flip";
 import "./back-flipcard.styles.scss";
-import "./flipcomponent.styles.scss";
+
 
 import flechas from "../images/icon.png";
 

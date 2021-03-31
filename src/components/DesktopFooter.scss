@@ -1,0 +1,102 @@
+.footer-container-desktop{
+  width: 1440px;
+  height: 175px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+
+
+  .white-container-desktop{
+    width: 1440px;
+    height: 130px;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0px 261px 0px 262px;
+
+    .logo-footer-desktop{
+      width: 98px;
+      height: 82px;
+    }
+
+    .num-desktop{
+      width: 147px;
+      text-align: center;
+      font-size: 20px;
+      font-weight:500 ;
+      line-height: 24px;
+
+    }
+
+    .correo-desktop{
+      width: 233px;
+      text-align: center;
+      font-size: 20px;
+      font-weight:500 ;
+      line-height: 24px;
+
+    }
+    .redes-desktop{
+      display: flex;
+      flex-flow: row;
+      align-items: center;
+      justify-content: center;
+      padding: 15px;
+
+      .fb{
+        margin:0px 14px;
+      }
+    }
+
+    .agendar-cita-footer-desktop{
+      width: 184px;
+      height: 72px;
+      display: flex;
+      background-color:#FF7890;
+      font-family: Montserrat;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      border-color: transparent;
+      color:white;
+      margin-top:20px;
+          }
+  }
+
+
+  .headtag-desktop{
+    height: 45px;
+    width: 1440px;
+    font-size: 14px;
+    line-height: 17px;
+    background: rgba(246, 246, 246, 1);
+    text-align: center;
+    color:rgba(148, 148, 148, 1);
+    align-items: center;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+
+  }
+
+  .derechos-desktop{
+    padding: 10px 20px;
+
+  }
+
+  .logo-head-tag-desktop{
+    width: 203px;
+    height: 25px;
+  }
+}
+
+
+

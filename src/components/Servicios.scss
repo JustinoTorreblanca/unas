@@ -237,6 +237,9 @@
   align-items: center;
   justify-content: center;
 
+  .anchor-agendar{
+    text-decoration: none;
+  }
   .cont{
     display: flex;
   flex-flow: column;

@@ -107,6 +107,10 @@ div.inpt {
   border-radius: 10px;
   border-color: transparent;
   color:white;
+
+}
+.link-agendar-cita{
+  text-decoration: none;
 }
 .inicia-sesion{
   width: auto;

@@ -1,0 +1,128 @@
+.navbar-desktop{
+  width: auto;
+  height: auto;
+  flex-flow: column;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 24px 100px 124px 100px;
+}
+
+.contenedor-agendar{
+  width: 1440px;
+  display: flex;
+  flex-direction: column;
+  background-color: #E5E5E5;
+
+
+    .datos{
+      color: black;
+      width: 488px;
+      height: 61px;
+      font-weight: 400;
+      font-size: 50px;
+      line-height: 60,95px;
+      text-align: center;
+      align-self: center;
+      margin-top: 224px;
+    }
+
+    .tu-cita{
+      color: black;
+      width: 536px;
+      height: 61px;
+      font-weight: 700;
+      font-size: 50px;
+      line-height: 60,95px;
+      text-align: center;
+      align-self: center;
+      margin: top 0px;
+
+    }
+
+    .form-iniciar-sesion{
+      width: auto;
+      height: 72px;
+      margin-top: 40px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-self: center;
+      margin-bottom: 24px;
+    }
+    .correo-iniciar-sesion{
+      width: 316px;
+      height: 72px;
+      margin-left: 433px;
+      align-items: center;
+      font-size: 16px;
+      font-family: Montserrat;
+      font-weight: 500;
+      border-radius: 10px;
+      border-color: transparent;
+      background: white;
+      text-align: center;
+      color:#C7C7C7;
+      margin-right: 24px;
+    }
+
+    .password{
+      width: 233px;
+      height: 72px;
+      display: flex;
+      background: white;
+      font-family: Montserrat;
+      border-radius: 10px;
+      border-color: transparent;
+      text-align: center;
+      color:#C7C7C7;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 20px;
+      margin-right: 434px;
+    }
+
+
+
+    .agendar-cita-registro-iniciar-sesion{
+      width: 184px;
+      height: 72px  ;
+      display: flex;
+      background-color:#FF7890;
+      font-family: Montserrat;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 24px;
+      justify-content: center;
+      align-self: center;
+      margin-bottom: 171px;
+      border-radius: 10px;
+      border-color: transparent;
+      color:white;
+    }
+
+    .inicia-sesion-registro{
+      width: auto;
+      height: 45px;
+      display: flex;
+      background: transparent;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      font-family: Montserrat;
+      font-weight: bold;
+      border-radius: 10px;
+      border-color: transparent;
+      color:black;
+      margin: 24px auto 123px;
+    }
+    .anchor-iniciar-sesion{
+      text-decoration: none;
+      color:black;
+    }
+}
+
+.footer-desktop{
+  width: 1440px;
+}

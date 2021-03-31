@@ -12,7 +12,9 @@ function Marcas() {
         En Clou nos preocupamos por brindarte el mejor servicio y por eso
         nuestro trabajo está respaldado por las mejores marcas del mercado.
       </p>
-      <span className="btn-agendar-marcas">Agendar cita</span>
+      <a href="/agendar-cita" className="anchor-agendar">
+        <span className="btn-agendar-marcas">Agendar cita</span>
+      </a>
       <div className="logos">
         <img src={opi} alt="img" className="opi"></img>
         <img src={gelish} alt="img" className="gelish"></img>

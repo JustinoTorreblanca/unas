@@ -14,7 +14,7 @@ function Diferentes() {
         <p className="hidromasaje">
           ¡Somos el único servicio a domicilio que cuenta con un hidromasaje!
         </p>
-        <a href="/">
+        <a href="/agendar-cita">
           <input
             type="button"
             className="btn-agendar"

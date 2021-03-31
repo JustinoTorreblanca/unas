@@ -5,9 +5,7 @@ import NavbarNegro from "./navbar-blanco";
 import imgfirst from "../images/img-first-card.png";
 import imgscond from "../images/img-sec-card.png";
 import imgthird from "../images/img-third-card.png";
-/* import rectangle from "../images/rectangle.png";
-import FrontFlipCard from "./Front-flipCard";
-import BackflipCard from "./Back-flipCard"; */
+
 import ContainerRosa from "./ContanierRosa";
 import ForMenServicios from "./ForMenServicios";
 import Marcas from "./Marcas";
@@ -27,30 +25,6 @@ function Servicios() {
           <img src={imgfirst} alt="img" className="first-img" />
 
           <CardFlip />
-          {/* {flip ? <FrontFlipCard /> : <BackflipCard />} */}
-          {/* <div className="services-front">
-              <h1 className="h3 card-services-titulo">Combo Spa Polish</h1>
-              <span className="h4 card-services-price">$750</span>
-              <span className="card-services-info">Más información</span>
-            </div> */}
-          {/* <div className="services-back">
-                <span className="titulo">Manicure Spa Polish</span>
-                <p className="sub-titulo">
-                  Limado y forma + cuidado de cutícula + exfoliante OPI + crema
-                  OPI + esmalte OPI
-                </p>
-                <span className="titulo-dos">Pedicure Spa Polish</span>
-                <p className="sub-titulo-dos">
-                  Limado y forma + cuidado de cutícula masaje en tina shiatsu +
-                  exfoliante OPI + crema OPI + esmalte OPI
-                </p>
-                <div>
-                  <button>
-                    <BsIcons.BsArrowRepeat size="2rem" color="white" />
-                  </button> */}
-          {/* AQUI VOY ^^^ */}
-          {/* </div>
-              </div> */}
         </div>
         <div className="container-spa-card2">
           <img src={imgscond} alt="img" className="img2" />
@@ -76,12 +50,13 @@ function Servicios() {
               nail art
             </p>
             <p className="desde">Servicios desde $200</p>
-            <input
-              type="button"
-              className="agendar-cita-rectangle"
-              value="Agendar cita"
-              href="/"
-            />
+            <a href="/agendar-cita"className="anchor-agendar">
+                    <input
+                      type="button"
+                      className="agendar-cita-rectangle"
+                      value="Agendar cita"
+                    />
+            </a>
           </div>
         </div>
         <ContainerRosa />

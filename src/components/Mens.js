@@ -1,6 +1,7 @@
 import React from "react";
 import "./Mens.css";
 
+
 function Mens() {
   return (
     <div className="mens-container">
@@ -15,7 +16,7 @@ function Mens() {
           </p>
         </div>
 
-        <a href="/">
+        <a href="/agendar-cita">
           <input
             type="button"
             className="btn-agendar-blanco"

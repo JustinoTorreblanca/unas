@@ -2,6 +2,7 @@ import React from "react";
 import "./Friends.scss";
 import imgfrnd from "../images/cloufriends.png";
 import Footer from "./LastCard";
+import { Link } from "react-router-dom";
 
 function Friends() {
   return (
@@ -14,7 +15,9 @@ function Friends() {
           algún combo. La que nos contrató tiene un 50% de descuento ensu combo
           y las amigas tienen un 25%
         </p>
-        <span className="btn-agendar-amigas">Agendar cita</span>
+        <Link to="/agendar-cita" className="link-btn">
+          <span className="btn-agendar-amigas">Agendar cita</span>
+        </Link>
       </div>
       <Footer />;
     </>

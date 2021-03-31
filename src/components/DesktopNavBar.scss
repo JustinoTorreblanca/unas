@@ -1,0 +1,95 @@
+.clou-logo{
+  display: flex;
+  width: 30vw;
+  height: 30vw;
+  margin-top: 10vh;
+}
+
+.dnavbar {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  margin: 24px 0px 0px;
+  z-index: 999;
+  width: 1440px;
+  height: 123px;
+  padding: 0px 100px;
+  position: absolute;
+
+}
+
+.dnavbar.active {
+  background: transparent;
+  top: -20px;
+}
+.desk-menu-bars {
+  padding-top: 38px;
+  background: none;
+}
+.logo-desk-header{
+  width:106px;
+  height: 88px;
+}
+.dnav-menu {
+  background-color: white;
+
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  transition: 850ms;
+}
+.dnav-menu.active {
+  right:0;
+  transition: 350ms;
+  z-index: 9999999;
+  width:100vw;
+}
+
+.logo-negro{
+  display: flex;
+  margin-left: -140px
+}
+
+.desktop-txt{
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  display: flex;
+  list-style: none ;
+  align-self: center;
+  width: 700px;
+  height: 36px;
+  flex-direction: row;
+  justify-content: center;
+
+  .anchor-servicios{
+    text-decoration: none;
+  }
+  a > li {
+    color:black;
+  }
+  .desktop-serv{
+    margin-right: 39.5px;
+  }
+  .desktop-cita{
+    margin: 0px 39.5px;
+  }
+  .desktop-contacto{
+    margin: 0px 39.5px;
+  }
+
+
+    .desktop-cita{
+      color:rgba(255, 120, 144, 1);
+      border-style:inset;
+      border-bottom-color: rgba(255, 120, 144, 1);
+      border-top-color: transparent;
+      border-right-color: transparent;
+      border-left-color: transparent;
+    }
+}

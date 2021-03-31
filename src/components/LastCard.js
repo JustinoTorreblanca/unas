@@ -4,6 +4,7 @@ import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import logonegro from "../images/clou-negro.png";
 import logoshead from "../images/logos.png";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -16,24 +17,26 @@ function Footer() {
           <FaIcons.FaFacebook size="2rem" color="black" />
           <AiIcons.AiFillInstagram size="2rem" color="black" />
         </div>
-
-        <input
-          type="button"
-          className="agendar-cita-footer"
-          value="Agendar cita"
-          href="/"
-        />
+        <Link to="/agendar-cita">
+            <input
+              type="button"
+              className="agendar-cita-footer"
+              value="Agendar cita"
+              href="/agendar-cita"
+            />
+        </Link>
       </div>
       <div className="headtag">
         <p className="derechos">
           ©2020 Clou. Todos los derechos reservados. Developed by
         </p>
+        <a  href="https://headtag.mx/"
+          taget="_blank">
         <img
           src={logoshead}
-          href="https://headtag.mx/"
           alt="logo-head-tag"
           className="logo-head-tag"
-        ></img>
+        ></img></a>
       </div>
     </div>
   );
