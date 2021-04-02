@@ -1,0 +1,65 @@
+.container-conocelas{
+  width: 360px;
+  height: 864px;
+  background-color: rgba(246, 246, 246, 1);;
+  padding: 60px 16px 100px 16px;
+
+  .titulo-conocelas{
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60.95px;
+    text-align: center;
+    color: black;
+  }
+
+  .ellas-conocelas{
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36.57px;
+    text-align: center;
+    color: black;
+    margin-top: 16px;
+  }
+
+  .img-conocelas{
+    width: 187.54px;
+    height: 187.54px;
+    margin-top: 72.23px;
+    align-self: center;
+    border-radius: 150px;
+    border: 12.23px solid rgba(255, 255, 255, 1);;
+    margin-left: 65px;
+  }
+  .nombre-conocelas{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36.57px;
+    text-align: center;
+    margin: 24px 130px 16px 130px;
+    color: rgba(194, 135, 142, 1);
+  }
+  .txt-conocelas{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    margin: 0px 25px 60px 25px;
+  }
+  .img-flecha-izq{
+    width: 16px;
+    height: 16px;
+    margin: 60px 36px 0px 130px;
+  }
+  .img-flecha-der{
+    width: 16px;
+    height: 16px;
+    /* margin: 0px 36px 0px 130px; */
+  }
+
+
+  .card-conocelas{
+    width:328px;
+    height: 460px;
+    margin-bottom: 60px;
+  }
+}

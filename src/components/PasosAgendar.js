@@ -1,15 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import NavbarNegroDesktop from "./DesktopNavBar";
 import "./PasosAgendar.scss";
 import FooterDesktop from "./DesktopFooter";
 import flechapasos from "../images/iconopasos.png";
 import CalendarComponent from "./CalendarComponent";
 import icongray from "../images/icongray.png";
-import agregar from "../images/agregar.png";
 import CardMetodoPago from "./CardMetodoPago";
 import CardDomicilio from "./CardDomicilio";
+import AgregarPersona from "./AgregarPersona";
 
 function PasosAgendar() {
+  const [buttonAddPerson, setButtonAddPerson] = useState(false);
+
   return (
     <div className="agendar-container">
       <NavbarNegroDesktop className="navbar-desktop-pasos" />
@@ -97,8 +99,17 @@ function PasosAgendar() {
               <select className="opciones-quien"></select>
             </div>
           </div>
-          <img src={agregar} alt="agregar" className="agregar"></img>
-          <p className="txt-agregar-persona"> + Agregar a otra persona</p>
+
+          <button
+
+               className="txt-agregar-persona"
+
+                   onClick={() => setButtonAddPerson(true)}
+
+          >
+            +Agregar a otra persona
+          </button>
+          <AgregarPersona trigger={buttonAddPerson} setTrigger={setButtonAddPerson}/>
         </div>
       </div>
       <div className="es-regalo">

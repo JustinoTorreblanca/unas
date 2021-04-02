@@ -5,7 +5,7 @@ import "./HeroSection.css";
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
 import scrll from "../images/scrll.png";
-import Agendar from "./Agendar.component";
+/* import Agendar from "./Agendar.component"; */
 
 
 function HeroSection() {

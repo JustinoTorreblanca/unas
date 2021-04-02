@@ -1,0 +1,51 @@
+.background-nosotros{
+  background-image: url('../images/backgroundnosotros.png');
+  background-size: cover;
+  height: 808px;
+  position: relative;
+
+
+  .nosotros-titulo{
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60.95px;
+    text-align: center;
+    padding-top: 355px;
+    margin:0px 15px 24px 25px;
+    color: white;
+    width: 289px;
+    height: 122px;
+    position: absolute;
+
+  }
+
+  .nosotros-txt{
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36.57px;
+    text-align: center;
+    margin:510px 16px 100px 36px;
+    color: white;
+    width: 288px;
+    height: 259px;
+    position: absolute;
+  }
+
+
+}
+.pink-card{
+  background-color: rgba(194, 135, 142, 1);
+  color: white;
+  width: 360px;
+  height: 453px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36.57px;
+  padding:60px 16px 60px 36px;
+  text-align: center;
+
+  .pink-card-txt{
+    width: 288px;
+  height: 333px;
+  }
+}

@@ -11,6 +11,8 @@ import ForMenServicios from "./ForMenServicios";
 import Marcas from "./Marcas";
 import Friends from "./Friends";
 import CardFlip from "./flipComponent";
+import ComboSpaCard from "./ComboSpaFlipCard"
+import ComboMixCard from "./ComboSpaMix"
 
 function Servicios() {
   return (
@@ -28,19 +30,11 @@ function Servicios() {
         </div>
         <div className="container-spa-card2">
           <img src={imgscond} alt="img" className="img2" />
-          <div className="second-card">
-            <h1 className="h3 card-services-titulo">Combo Spa Gel</h1>
-            <span className="h4 card-services-price">$950</span>
-            <span className="card-services-info">Más información</span>
-          </div>
+          <ComboSpaCard />
         </div>
         <div className="container-spa-card3">
           <img src={imgthird} alt="img" className="img3" />
-          <div className="third-card">
-            <h1 className="h3 card-services-titulo">Combo Spa Mix</h1>
-            <span className="h4 card-services-price">$850</span>
-            <span className="card-services-info">Más información</span>
-          </div>
+          <ComboMixCard />
         </div>
         <div className="rectangle">
           <div className="cont">

@@ -1,0 +1,49 @@
+.cont-focus{
+  width: 768px;
+  height: 3620px;
+  background-color: rgba(196, 196, 196, 1);
+}
+
+.button-add-person{
+  width: 559px;
+  height: 390px;
+  background-color: white;
+  margin-top: -390px;
+
+  .h1-agregas{
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36.57px;
+    margin: 40px 217px 24px 62px;
+  }
+
+  .img-x{
+    width: 22px;
+    height: 21.83px;
+    margin: 16.77px 25px 0px 0px;
+  }
+
+  .personas{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .bold-registrar{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .radio-add{
+    width: 20px;
+    height: 20px;
+    margin:24px 8px 24px 64px;
+  }
+  .boton-agregar{
+    width:22px;
+    height:21.83px;
+    background: transparent;
+    border-color:transparent;
+  }
+}
