@@ -1,11 +1,12 @@
 import React from "react";
-import "./Diferentes.css";
+import "./Diferentes.scss";
+import difimg from "../images/dif.png"
 
 function Diferentes() {
   return (
     <div className="containter-diferentes">
       <img
-        src="https://clounailcare.com/static/media/carousel1.e149173a.jpg"
+        src={difimg}
         alt="img"
         className="foto-diferente"
       ></img>
@@ -17,7 +18,7 @@ function Diferentes() {
         <a href="/agendar-cita">
           <input
             type="button"
-            className="btn-agendar"
+            className="btn-agendar-dif"
             value="Agendar cita"
           ></input>
         </a>

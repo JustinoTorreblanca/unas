@@ -1,8 +1,8 @@
 import React from "react";
-import "./Conocelas.scss";
-import Elisa from "../images/Nosotros/Elisa.png";
+
+/* import Elisa from "../images/Nosotros/Elisa.png";
 import FlechaDer from "../images/Nosotros/flechader.png";
-import FlechaIzq from "../images/Nosotros/flechaizq.png";
+import FlechaIzq from "../images/Nosotros/flechaizq.png"; */
 import ImageSlider from "./ImageSlider";
 import { SliderData } from "./SliderData";
 
@@ -11,6 +11,7 @@ function Conocelas() {
     <div className="container-conocelas">
       <h1 className="titulo-conocelas">Conócelas</h1>
       <h2 className="ellas-conocelas">Ellas conforman nuestro equipo:</h2>
+      <ImageSlider slides={SliderData} />
       {/*  <div className="card-conocelas">
         <img src={Elisa} alt="img" className="img-conocelas"></img>
         <h1 className="nombre-conocelas">Elisa</h1>
@@ -20,7 +21,7 @@ function Conocelas() {
           mi."
         </p>
       </div> */}
-      <ImageSlider slides={SliderData} />
+
       {/* <img src={FlechaIzq} alt="img" className="img-flecha-izq"></img>
       <img
         src={FlechaDer}

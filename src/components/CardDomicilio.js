@@ -49,7 +49,7 @@ function CardDomicilio() {
           </div>
           <div className="wrap-num-colonia">
             <div className="numero-pasos">
-              <label className="txt-pas">Numero</label>
+              <label className="txt-pas">Número</label>
               <input type="text" className="txt-col" />
             </div>
             <div className="colonia-pasos">

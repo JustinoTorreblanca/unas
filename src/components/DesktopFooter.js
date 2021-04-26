@@ -8,8 +8,8 @@ import logoshead from "../images/logos.png";
 function FooterDesktop() {
   return (
     <div className="footer-container-desktop">
-      <div className="white-container-desktop">
         <img src={logonegro} className="logo-footer-desktop" alt="logo"></img>
+      <div className="white-container-desktop">
         <h1 className="num-desktop">(55) 60 55 1450</h1>
         <h1 className="correo-desktop">info@clounailcare.com</h1>
         <div className="redes-desktop">

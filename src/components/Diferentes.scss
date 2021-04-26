@@ -1,0 +1,120 @@
+.containter-diferentes{
+  height: 564px;
+  width: 100vw;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+}
+.foto-diferente{
+  width:100%;
+  height: 50vh;
+}
+.diferentes{
+  background: rgba(246, 246, 246, 1);
+  height: 280px;
+  width: 320px;
+  color:black;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+.dif{
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  width: 50vw;
+}
+.hidromasaje{
+  font-weight: normal;
+  font-size: 14px;
+  text-align: center;
+  padding: 15px;
+}
+
+.btn-agendar-dif{
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 22px;
+  background: none;
+  border-bottom-color: #FF7890;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  padding-bottom: 10px;
+  color:black;
+}
+ /* MEDIA QUERIES */
+
+  /* 768 px */
+@media (min-width: 768px) {
+  .foto-diferente{
+    background-image: url('../images//difmed.png');
+    display: flex;
+    justify-content: start;
+  }
+  .containter-diferentes{
+    width: 768px;
+    /* height: 800px; */
+  }
+  .diferentes{
+    width: 768px;
+    height: 319px;
+  }
+  .dif{
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .hidromasaje{
+    width: 365px;
+    height: 48px;
+    font-size: 20px;
+    margin-bottom: 54px;
+  }
+
+}
+
+
+
+/* 1152 px */
+@media (min-width: 1152px){
+  .foto-diferente{
+    width: 576px;
+    height: 650px;
+    display: flex;
+    justify-content: start;
+  }
+  .containter-diferentes{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    max-width: 1152px;
+    height: 650px;
+    margin-left: 150px;
+    }
+  .diferentes{
+    width: 576px;
+    height: 650px;
+  }
+}
+
+/* 1440px */
+@media (min-width: 1440px){
+  .foto-diferente{
+    width: 720px;
+    height: 650px;
+  }
+  .diferentes{
+    width: 720px;
+    height: 650px;
+  }
+  .containter-diferentes{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    max-width: 1440px;
+    height: 650px;
+    margin-left: 335px;
+    }
+}

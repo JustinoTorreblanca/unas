@@ -11,7 +11,7 @@
   justify-content: space-between;
   margin: 24px 0px 0px;
   z-index: 999;
-  width: 1440px;
+  width: 320px;
   height: 123px;
   padding: 0px 100px;
   position: absolute;
@@ -62,7 +62,7 @@
   display: flex;
   list-style: none ;
   align-self: center;
-  width: 700px;
+  /* width: 700px; */
   height: 36px;
   flex-direction: row;
   justify-content: center;
@@ -93,3 +93,40 @@
       border-left-color: transparent;
     }
 }
+  /* MEDIA QUERIES */
+  /* 320px */
+
+  @media (min-width: 320px) and (max-width: 768px){
+    .dnavbar{
+      width: 300px;
+      padding: 10px;
+    }
+
+  }
+
+  /* 768 px */
+  @media (min-width: 768px) {
+    .dnavbar{
+      width: 768px;
+      padding: 0px 20px;
+    }
+
+  }
+
+  /* 1152 px */
+  @media (min-width: 1152px) {
+    .dnavbar{
+      width: 1152px;
+    }
+    .desktop-txt{
+      flex-direction: row;
+    }
+
+  }
+
+  /* 1440 px */
+  @media (min-width: 1440px) {
+    .dnavbar{
+      width: 1440px;
+    }
+  }

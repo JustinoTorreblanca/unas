@@ -1,41 +1,41 @@
 import React from "react";
-import "./Domicilio.css";
+import "./Domicilio.scss";
 
 function Domicilio() {
   return (
     <div className="domicilio">
       <div className="serv-dom">
-        <h1>¡Nuestro servicio es a domicilio!</h1>
+        <h1 className="nuestro-serv">¡Nuestro servicio es a domicilio!</h1>
       </div>
       <br />
       <p className="txt">
         Nuestras manicuristas son trasladadas en coche privado y sanitizado para
-        tu seguridad. Cubrimos estas zonas de la CDMX !Pregunta si llegamos a la
-        tuya!
+        tu seguridad. <br /> Cubrimos estas zonas de la CDMX !Pregunta si
+        llegamos a la tuya!
       </p>
-      <ul className="zonas">
-        <li>Polanco</li>
-        <br />
-        <li>Lomas</li>
-        <br />
-        <li>Santa Fé</li>
-        <br />
-        <li>Condesa</li>
-        <br />
-        <li>Bosques</li>
-        <br />
-        <li>Interlomas</li>
-        <br />
-        <li>Palmas</li>
-        <br />
-        <li>Tecamachalco</li>
-        <br />
-        <li>El Olivo</li>
-        <br />
-        <li>El Chamizal</li>
-        <br />
-        <li>Plaza Carzo</li>
-      </ul>
+      <div className="zonas-lista">
+        <ul className="zonas">
+          <div className="primera-fila">
+            <li>Polanco</li>
+            <li>Lomas</li>
+            <li>Santa Fé</li>
+            <li>Condesa</li>
+          </div>
+          <div className="segunda-fila">
+            <li>Bosques</li>
+            <li>Interlomas</li>
+            <li>Palmas</li>
+          </div>
+          <div className="tercera-fila">
+            <li>Tecamachalco</li>
+            <li>El Olivo</li>
+            <li>El Chamizal</li>
+          </div>
+          <div className="plaza-carzo">
+            <li>Plaza Carzo</li>
+          </div>
+        </ul>
+      </div>
     </div>
   );
 }

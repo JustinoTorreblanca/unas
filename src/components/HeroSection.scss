@@ -120,7 +120,7 @@ div.inpt {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 1spx;
+  font-size: 16px;
   font-family: Montserrat;
   font-weight: bold;
   /* margin-bottom: 10px; */
@@ -132,48 +132,97 @@ div.inpt {
   color:white;
   padding-bottom: 10px;
 }
+
+
 /* MEDIA QUERIES */
+
+  /* 768 px */
 @media (min-width: 768px) {
   .background {
-    background-image: url(https://clounailcare.com/static/media/hero_tablet.575ada0a.jpg);
+    /* background-image: url(https://clounailcare.com/static/media/hero_tablet.575ada0a.jpg); */
+    height: 1024px;
   }
-}
-@media (min-width: 1440px){
-  .background{
-    background-image: url(https://clounailcare.com/static/media/hero_desktop.9e93c0a8.jpg);
+  .hero-container{
+    padding-top:400px;
+    justify-content: space-between;
+
   }
-}
-@media (min-width: 1152px){
-  .background{
-    background-image: url(https://clounailcare.com/static/media/hero_laptop.48c160f8.jpg);
-  }
-}
-/* H1 y H2 */
-@media (min-width: 768px){
+
+  /* H1 y H2 */
   .tus-unas, .dia{
-    width: 688px;
-    margin-bottom: 24px;
+    /* margin-bottom: 24px; */
     font-size: 40px;
     line-height: 48px;
     text-align: center;
   }
+  h2.que{
+    margin-left:-440px;
+    margin-bottom: -47px;
+  }
+  h2.cas{
+    margin-left: 320px;
+  }
+  div.inpt{
+    width: 572;
+    height: 72px;
+    margin: auto;
+  }
+  .nombre{
+    width: 233px;
+    height: 72px;
+    margin-left: -390px
+  }
+  .email{
+    width: 316px;
+    height: 72px;
+    margin-top:-49px;
+    margin-right:-190px;
+  }
+  .agendar-cita{
+    width: 184px;
+  }
+  .inicia-sesion{
+    font-size: 20px;
+  }
 }
+
+
+
+/* 1152 px */
+@media (min-width: 1152px){
+  .background{
+    background-image: url('../images/fondomed.png');
+    background-size: cover;
+    width: 1152px;
+    height: 700px;
+    position: relative;
+  }
+  div.inpt{
+    width: auto;
+    max-width: 575px;
+  }
+  .desktop-serv, .desktop-cita, .desktop-contacto, .desktop-nosotros{
+    display: none;
+  }
+}
+
+/* 1440 px */
 @media (min-width: 1440px){
+  .background{
+    background-image: url('../images/fondolast.png');
+    background-size: cover;
+    width: 1440px;
+    height: 900px;
+    position: relative;
+  }
   .tus-unas, .dia{
     line-height: 60px;
     font-size: 50px;
   }
-}
-/* INPUT */
-@media(min-width: 1152px){
-div.inpt{
-    width: auto;
-    max-width: 575px;
+  h2.cas{
+    margin-left: 560px;
+    margin-top: -15px;
   }
 }
-@media(min-width: 768px){
-  div.inpt{
-      width: 572;
-      margin: auto;
-    }
-  }
+
+

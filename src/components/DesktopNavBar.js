@@ -35,6 +35,7 @@ function NavbarNegroDesktop() {
               src={clounegro}
             ></input>
           </a>
+
           <ol className="desktop-txt">
             <a href="/servicios" className="anchor-servicios">
               <li className="desktop-serv">Servicios</li>

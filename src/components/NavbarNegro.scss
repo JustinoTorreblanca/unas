@@ -97,3 +97,24 @@ span:hover {
   display: flex;
   margin-left: -140px
 }
+  /* MEDIA QUERIES */
+
+  /* 768 px */
+@media (min-width: 768px) {
+  .navbar{
+    max-width:768px;
+  }
+  .desktop-serv, .desktop-cita, .desktop-contacto, .desktop-nosotros{
+    display: none;
+  }
+}
+@media (min-width: 1152px) {
+  .navbar{
+    max-width:1152px;
+  }
+}
+@media (min-width: 1440px) {
+  .navbar{
+    max-width:1440px;
+  }
+}

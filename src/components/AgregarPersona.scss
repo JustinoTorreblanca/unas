@@ -1,14 +1,21 @@
-.cont-focus{
-  width: 768px;
-  height: 3620px;
-  background-color: rgba(196, 196, 196, 1);
+.modal{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background: rgba(196, 196, 196, 1);
+  transition: all 500ms ease;
+  z-index: 9999;
 }
-
-.button-add-person{
+.contendor{
   width: 559px;
   height: 390px;
   background-color: white;
   margin-top: -390px;
+  transition: all 500ms ease;
+}
 
   .h1-agregas{
     font-weight: 400;
@@ -46,4 +53,17 @@
     background: transparent;
     border-color:transparent;
   }
-}
+
+  .continuar-btn{
+    background: transparent;
+    border-color:transparent;
+    padding-bottom: 30px;
+    height: 24px;
+    border-style: inset;
+    border-bottom-color: black;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    margin-left:310px;
+    margin-top: 25px;
+  }

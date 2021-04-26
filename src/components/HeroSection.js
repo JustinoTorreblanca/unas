@@ -1,11 +1,13 @@
 import React from "react";
 import "../App.css";
-import "./HeroSection.css";
+import "./HeroSection.scss";
 /* import Scroll from "../components/Scroll.component"; */
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
 import scrll from "../images/scrll.png";
 /* import Agendar from "./Agendar.component"; */
+/* import back from "../images/background1440" */
+
 
 
 function HeroSection() {
@@ -15,8 +17,8 @@ function HeroSection() {
         <Navbar />
         <h1 className="tus-unas"> Tus uñas listas</h1>
         <br />
-        <h2 className="dia">el día que quieras</h2>
-        <h2 className="dia">y sin salir de casa</h2>
+        <h2 className="dia que">el día que quieras</h2>
+        <h2 className="dia cas">y sin salir de casa</h2>
         <div className="inpt">
           <input
             type="text"
@@ -32,14 +34,15 @@ function HeroSection() {
             placeholder="✉ Ingresa tu correo electrónico"
           />
           <Link to="/agendar-cita" className="link-agendar-cita">
-                  <button
-                    type="button"
-                    className="agendar-cita"
-                    value="Agendar cita"
-                    /* href="/agendar-cita"
+            <button
+              type="button"
+              className="agendar-cita"
+              value="Agendar cita"
+              /* href="/agendar-cita"
                     onClick={Agendar} */
-                  >Agendar cita</button>
-
+            >
+              Agendar cita
+            </button>
           </Link>
 
           <input

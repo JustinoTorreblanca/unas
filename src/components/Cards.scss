@@ -1,0 +1,163 @@
+.quienes-somos{
+  width: 100vw;
+  height: 568px;
+  justify-content: flex-end;
+  margin-top: -9px;
+  background-color: rgba(246, 246, 246, 1);
+}
+.unas-img{
+  background-size: cover;
+  height: 284px;
+  width: 320px;
+  position: relative;
+  min-width: 320px;
+  min-height: 284px;
+}
+.texto{
+  display: flex;
+  flex-flow: column;
+  height: 284px;
+  width: 320px;
+  align-items: center;
+  justify-content: center;
+  color:black;
+  font-family: Montserrat;
+  padding: 43px 0px;
+
+}
+.texto>h1{
+  text-align: center;
+  color:black;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+.agendar, .somos{
+  font-family: Montserrat;
+  color: black;
+  text-align: center;
+  padding: 15px;
+}
+.somos{
+  font-family: Montserrat;
+  color: black;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+}
+div.text.h1 {
+  text-align: center;
+  color:black;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 22px;
+}
+.btn-agendar-somos{
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  background: none;
+  border-bottom-color: #FF7890;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  padding-bottom: 10px;
+  color:black;
+}
+
+  /* MEDIA QUERIES */
+
+  /* 768 px */
+@media (min-width: 768px) {
+  .unas-img {
+    background-image: url('../images/pintandomed.png');
+  background-size: cover;
+  width: 768px;
+  height: 325px;
+  position: relative;
+  }
+  .texto{
+    margin: 54px 161px 56px 202px;
+    justify-content: unset;
+  }
+  .quienes{
+    font-size: 30px;
+    line-height: 36.57px;
+    font-weight: 700;
+  }
+  .somos{
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+  }
+  .quienes-somos{
+    height:768px;
+  }
+}
+
+/* 1152 px */
+@media (min-width: 1152px){
+  .unas-img{
+    background-image: url('../images/pintandodesk.png');
+    background-size: cover;
+    width: 556px;
+    height: 650px;
+    position: relative;
+  }
+  .quienes-somos{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    height: 650px;
+    background-color: rgba(246, 246, 246, 1);
+  }
+  .texto{
+    margin: 164px 150px 173px;
+    justify-content: unset;
+  }
+  .quienes{
+    font-size: 30px;
+    line-height: 36.57px;
+    font-weight: 700;
+  }
+  .somos{
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+  }
+}
+
+/* 1440 px */
+@media (min-width: 1440px){
+  .unas-img{
+    background-image: url('../images/pintandolast.png');
+    background-size: cover;
+    width: 720px;
+    height: 650px;
+    position: relative;
+  }
+  .quienes-somos{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    height: 650px;
+    background-color: rgba(246, 246, 246, 1);
+    max-width: 1440px;
+  }
+  .texto{
+    margin: 164px 222px;
+
+  }
+  .quienes{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36.7px;
+  }
+  .somos{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}

@@ -1,5 +1,6 @@
 .footer-container{
-  height: 70vh;
+  height: 309px;
+  width: 320px;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -9,8 +10,9 @@
 }
 
 .logo-footer{
-  width: 100px;
-  height: 100px;
+  width: 98px;
+  height: 82px;
+  margin-top:150px;
 }
 .white-container{
   display: flex;
@@ -80,4 +82,71 @@
 .logo-head-tag{
   width: 203px;
   height: 25px;
+}
+
+  /* MEDIA QUERIES */
+
+  /* 768 px */
+@media (min-width: 768px){
+  .footer-container{
+    width: 768px;
+    height: 526px;
+  }
+  .cont-medio{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .agendar-cita-footer{
+    width: 184px;
+    height: 72px;
+  }
+  .correo{
+    padding:0px;
+  }
+  .headtag{
+    width: 768px;
+    height: 45px;
+    flex-flow:row;
+  }
+}
+
+/* 1152 px */
+@media (min-width: 1152px){
+  .footer-container{
+    width: 1152px;
+    height: 130px;
+    display: flex;
+    /* flex-direction:row; */
+  }
+  .white-container{
+    width: 1152px;
+    height: 130px;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+  }
+  .logo-footer{
+    margin-top:40px;
+  }
+  .cont-medio{
+    width: 800px;
+    justify-content: space-evenly;
+    margin-top: 50px;
+  }
+  .headtag{
+    width: 1152px;
+    height: 45px;
+    flex-flow:row;
+  }
+}
+
+/* 1440  px */
+@media (min-width: 1440px){
+  .footer-container, .white-container{
+    width: 1440px;
+  }
+  .headtag{
+    width: 1440px;
+}
 }

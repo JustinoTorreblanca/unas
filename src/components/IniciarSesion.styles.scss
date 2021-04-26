@@ -9,16 +9,16 @@
 }
 
 .contenedor-agendar{
-  width: 1440px;
+  width: 320px;
   display: flex;
   flex-direction: column;
-  background-color: #E5E5E5;
+  background-color: rgba(246, 246, 246, 1);
 
 
     .datos{
       color: black;
-      width: 488px;
-      height: 61px;
+      width: 242px;
+      height: 122px;
       font-weight: 400;
       font-size: 50px;
       line-height: 60,95px;
@@ -29,8 +29,8 @@
 
     .tu-cita{
       color: black;
-      width: 536px;
-      height: 61px;
+      width: 288px;
+      height: 183px;
       font-weight: 700;
       font-size: 50px;
       line-height: 60,95px;
@@ -82,8 +82,6 @@
       margin-right: 434px;
     }
 
-
-
     .agendar-cita-registro-iniciar-sesion{
       width: 184px;
       height: 72px  ;
@@ -126,3 +124,106 @@
 .footer-desktop{
   width: 1440px;
 }
+
+/* MEDIA QUERIES */
+
+  /* 320px */
+  @media (min-width: 320px) {
+    .contenedor-agendar{
+      width: 320px;
+
+  }
+}
+
+  /* 768 px */
+  @media (min-width: 768px) {
+    .contenedor-agendar{
+      width: 768px;
+      height: 900px;
+
+      .datos{
+        width: 448px;
+      }
+      .tu-cita{
+        width: 536px;
+        margin-top: -65px;
+        height: auto;
+      }
+
+      .form-registro{
+        align-items: flex-start;
+        margin-top: 50px;
+      }
+
+      .name{
+        width: 233px;
+        height: 72px;
+        margin-left: 97px;
+      }
+      .correo{
+        width: 316px;
+        height: 72px;
+        margin-left: 350px;
+        margin-top: -86px
+      }
+      .telephone{
+        width: 233px;
+        margin-left: 267px;
+        margin-bottom: 40px;
+      }
+      .agendar-cita-registro{
+        width: 184px;
+        height: 72px;
+      }
+   }
+}
+
+  /* 1152 px */
+@media (min-width: 1152px){
+  .contenedor-agendar{
+    width: 1152px;
+    height: 680px;
+
+
+    .tu-cita{
+      width: 536px;
+      margin-top: -5px;
+      height: auto;
+    }
+
+    .form-registro{
+      align-items: center;
+      margin-top: 50px;
+      flex-direction: row;
+      justify-content: center;
+    }
+    .name{
+      width: 233px;
+      height: 72px;
+      margin: 0px;
+      margin-right: 24px;
+    }
+    .correo{
+      width: 316px;
+      height: 72px;
+      margin: 0px;
+      margin-right: 24px;
+
+    }
+    .telephone{
+      width: 233px;
+      margin: 0px;
+    }
+    .agendar-cita-registro{
+      margin-top:24px;
+    }
+  }
+}
+
+ /* 1440 px */
+ @media (min-width: 1440px){
+  .contenedor-agendar{
+    width: 1440px;
+    height:800px;
+  }
+ }

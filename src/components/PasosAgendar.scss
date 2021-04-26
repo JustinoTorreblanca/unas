@@ -145,6 +145,14 @@
     font-size: 16px;
     line-height: 20px;
     color: rgba(199, 199, 199, 1);
+    margin-top:-20px;
+  }
+  .boton-otra-persona{
+    background: transparent;
+    border-color: transparent;
+    width: 154px;
+    height: 20px;
+    margin-left: 224px;
   }
   .nombre-cliente-container{
     width: 696px;
@@ -168,6 +176,7 @@
   .opciones-servicio{
     width: 610px;
     height: 40px;
+    margin-top:10px;
   }
 
   .wrap-horario{
@@ -218,7 +227,10 @@
   .icono-otra-persona{
     width: 20px;
     height: 20px;
-    margin-left: 224px;
+    margin-left: -190px;
+    margin-top: 10px;
+
+
   }
   .txt-agregar-persona{
     margin-top:64px;
@@ -226,6 +238,13 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
+    background: transparent;
+    border-color:transparent;
+  }
+  .add-pers{
+    width: 22px;
+    height:22px;
+    margin:0px 9px -5px -9px;
   }
 
   .wrap-calendar{

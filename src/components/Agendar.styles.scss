@@ -9,7 +9,7 @@
 }
 
 .contenedor-agendar{
-  width: 1440px;
+  /* width: 320px; */
   display: flex;
   flex-direction: column;
   background-color: #E5E5E5;
@@ -42,16 +42,17 @@
 
     .form-registro{
       width: auto;
-      margin-left: 305px;
-      margin-right: 305px;
+      /* margin-left: 305px;
+      margin-right: 305px; */
       margin-top: 40px;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: space-around;
+      align-items: center;
     }
 
     .name{
-      width: 233px;
+      width: 288px;
       height: 72px;
       display: flex;
       background: white;
@@ -63,10 +64,12 @@
       font-size: 16px;
       font-weight: 500;
       line-height: 20px;
+      margin-bottom: 16px;
+      margin-left: 0px;
     }
 
     .correo{
-      width: 316px;
+      width: 288px;
       height: 72px;
       display: flex;
       background: white;
@@ -78,12 +81,14 @@
       font-size: 16px;
       font-weight: 500;
       line-height: 20px;
-      margin: 0px 24px 24px 24px;
+      /* margin: 0px 24px 24px 24px; */
       padding-top: 0px;
+      margin-bottom: 16px;
+      margin-left: 0px;
     }
 
     .telephone{
-      width: 233px;
+      width: 288px;
       height: 72px;
       display: flex;
       background: white;
@@ -95,10 +100,12 @@
       font-size: 16px;
       font-weight: 500;
       line-height: 20px;
+      margin-bottom: 16px;
+      margin-left: 0px;
     }
 
     .agendar-cita-registro{
-      width: 184px;
+      width: 288px;
       height: 72px  ;
       display: flex;
       background-color:#FF7890;
@@ -113,6 +120,7 @@
       border-color: transparent;
       color:white;
       text-decoration: none;
+      margin-left: 0px;
     }
 
     .inicia-sesion-registro{
@@ -129,11 +137,12 @@
       border-radius: 10px;
       border-color: transparent;
       color:black;
-      margin: 24px auto 123px;
+      margin: 24px auto;
     }
     .anchor-iniciar-sesion{
       text-decoration: none;
       color:black;
+
     }
 }
 

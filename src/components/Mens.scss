@@ -1,7 +1,7 @@
 div.mens-container{
   background: black;
-  width: 100vw;
-  height: 66vh;
+  width: 320px;
+  height: 424px;
   justify-content: flex-end;
   align-items: center;
   flex-flow: column;
@@ -21,14 +21,12 @@ div.mens-container{
   padding-bottom: 10px;
 }
 div.for-men{
-  height: 100vh;
-  width: 100vw;
   color:white;
   padding-bottom: 10px;
   align-items: center;
   flex-flow: column;
   display: flex;
-  justify-content: center;
+
 }
 .servicio-hombre{
   border-top-color:white;
@@ -59,12 +57,47 @@ div.for-men{
   color:white;
 
 }
+/* MEDIA QUERIES */
+
+/* 768 px */
+@media (min-width: 768px) {
+ div.mens-container-dos{
+  width: 768px;
+  height: 424px;
+  position: relative;
+  display: flex;
+  flex-direction: row;}
+
+  div.for-men-dos{
+    display: flex;
+    flex-direction: row;
+
+    margin: 100px 40px 100px 48.94px;
+  }
+  .nuestro{
+    border-top-style: unset;
+    border-left-style: outset;
+    border-left-width: 2px;
+    border-left-color: white;
+    text-align: initial;
+    font-size: 20px;
+  }
+}
+
+/* 1152 px */
 @media (min-width: 1152px){
-div.mens-container {
-grid-template-columns: 1fr 2fr;
-    padding: 100px 0;
-    max-width: 1050px;
-    width: 100%;
-    margin: auto;
+  div.mens-container-dos{
+    width: 1152px;
+    height: 424px;
+    padding: 100px 95px 100px 104.94px;
+  }
+}
+
+/* 1440 px */
+@media (min-width: 1440px){
+  div.mens-container-dos{
+    width: 1440px;
+    height: 424px;
+    padding: 100px 0px;
   }
 }

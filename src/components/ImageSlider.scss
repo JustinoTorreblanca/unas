@@ -35,7 +35,7 @@
     font-size: 30px;
     line-height: 36.57px;
     text-align: center;
-    margin: 24px 130px 16px 130px;
+    margin: 24px auto 16px auto;
     color: rgba(194, 135, 142, 1);
   }
   .txt-conocelas{
@@ -43,7 +43,7 @@
     font-size: 20px;
     line-height: 24px;
     text-align: center;
-    margin: 0px 25px 60px 25px;
+    margin: 0px 0px 60px 25px;
   }
   .img-flecha-izq{
     width: 16px;
@@ -60,6 +60,6 @@
   .card-conocelas{
     width:328px;
     height: 460px;
-    margin-bottom: 60px;
+    /* margin-bottom: 60px; */
   }
 }

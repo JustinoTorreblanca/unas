@@ -1,25 +1,34 @@
-import React, { useState } from "react";
+import React from "react";
 import NavbarNegroDesktop from "./DesktopNavBar";
 import "./PasosAgendar.scss";
 import FooterDesktop from "./DesktopFooter";
 import flechapasos from "../images/iconopasos.png";
 import CalendarComponent from "./CalendarComponent";
-import icongray from "../images/icongray.png";
+/* import { useForm } from 'react-hook-form'; */
+
 import CardMetodoPago from "./CardMetodoPago";
 import CardDomicilio from "./CardDomicilio";
-import AgregarPersona from "./AgregarPersona";
+
+import PopUpOtraPersona from "./PopUpOtraPersona";
+import PopUpAgregarOtraPersona from "./AgregrarPersPopUp"
+
 
 function PasosAgendar() {
-  const [buttonAddPerson, setButtonAddPerson] = useState(false);
+
+
+
+
 
   return (
     <div className="agendar-container">
       <NavbarNegroDesktop className="navbar-desktop-pasos" />
       <div className="container-pasos">
+
         <div className="zona">
           <span className="titulo-zona">¿En qué zona te encuentras?</span>
           <img src={flechapasos} alt="flecha" className="flecha-pasos"></img>
         </div>
+
         <div className="wrap-radio-buttons">
           <div className="primera-seccion">
             <input type="radio" className="radio-button" name="zona" />
@@ -33,6 +42,7 @@ function PasosAgendar() {
             <input type="radio" className="radio-button" name="zona" />
             <label for="Bosques">Bosques</label>
           </div>
+
           <div className="segunda-seccion">
             <input type="radio" className="radio-button" name="zona" />
             <label for="Interlomas">Interlomas</label>
@@ -78,8 +88,8 @@ function PasosAgendar() {
         <div className="wrap-nombre">
           <div className="nombre-cliente-container">
             <h1 className="nombre-cliente">Nombre cliente Clou</h1>
-            <img src={icongray} alt="icon" className="icono-otra-persona"></img>
-            <span className="otra-persona">Soy otra persona</span>
+
+            <PopUpOtraPersona />
           </div>
           <form className="form-servicio">
             <label className="dropdown-servicio">Servicio*</label>
@@ -100,16 +110,8 @@ function PasosAgendar() {
             </div>
           </div>
 
-          <button
+          <PopUpAgregarOtraPersona />
 
-               className="txt-agregar-persona"
-
-                   onClick={() => setButtonAddPerson(true)}
-
-          >
-            +Agregar a otra persona
-          </button>
-          <AgregarPersona trigger={buttonAddPerson} setTrigger={setButtonAddPerson}/>
         </div>
       </div>
       <div className="es-regalo">
@@ -134,6 +136,7 @@ function PasosAgendar() {
 
       {/* DATOS PARA REGALO */}
       <div className="container-datos-regalo">
+        <form /* onSubmit={handleSubmit(onSubmit)} */>
         <div className="zona-dia">
           <span className="titulo-dia titulo-regalo">Datos para regalo</span>
           <img src={flechapasos} alt="flecha" className="flecha-pasos"></img>
@@ -141,17 +144,28 @@ function PasosAgendar() {
         <div className="wrap-pasos-regalo">
           <div className="container-nombre-regalo">
             <label className="nombre-pasos-regalo">Nombre</label>
-            <input type="text" className="nombre-regalo-inpt"></input>
+            <input type="text" className="nombre-regalo-inpt" name="name" /* ref={register({required: {value: true, message: 'Campo Requerido'}})} */ ></input>
+            {/* <div>
+              {errors?.name?.message}
+            </div> */}
           </div>
           <div className="container-correo-pasos">
             <label className="correo-pasos-regalo">Correo electrónico*</label>
-            <input className="correo-regalo-inpt"></input>
+            <input className="correo-regalo-inpt" name="email" /* ref={register({required: {value: true, message: 'Campo Requerido'}})} */></input>
+            {/* <div>
+              {errors?.email?.message}
+            </div> */}
           </div>
         </div>
         <div className="container-direccion-pasos">
           <label className="direccion-regalo">Dirección</label>
-          <input className="direccion-regalo-inpt" />
+          <input className="direccion-regalo-inpt" name="address" /* ref={register({required: {value: true, message: 'Campo Requerido'}})} *//>
+          {/* <div>
+              {errors?.address?.message}
+            </div> */}
         </div>
+      </form>
+
       </div>
 
       {/* METODO DE PAGO */}
@@ -159,6 +173,8 @@ function PasosAgendar() {
 
       {/* DOMICILIO */}
       <CardDomicilio />
+
+
 
       <div className="cont-boton-guardar">
         <a href="/" className="anchor-pasos">

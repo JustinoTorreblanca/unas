@@ -1,6 +1,6 @@
 .footer-container-desktop{
-  width: 1440px;
-  height: 175px;
+  width: 320px;
+  height: 350px;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -9,13 +9,13 @@
 
 
   .white-container-desktop{
-    width: 1440px;
-    height: 130px;
+    width: 320px;
+    /* height: 309px; */
     display: flex;
-    flex-flow: row;
+    flex-flow: column;
     align-items: center;
     justify-content: space-evenly;
-    padding: 0px 261px 0px 262px;
+    /* padding: 0px 261px 0px 262px; */
 
     .logo-footer-desktop{
       width: 98px;
@@ -28,6 +28,7 @@
       font-size: 20px;
       font-weight:500 ;
       line-height: 24px;
+      margin-top: 11px;
 
     }
 
@@ -37,6 +38,7 @@
       font-size: 20px;
       font-weight:500 ;
       line-height: 24px;
+      margin-top: 11px;
 
     }
     .redes-desktop{
@@ -44,7 +46,7 @@
       flex-flow: row;
       align-items: center;
       justify-content: center;
-      padding: 15px;
+      margin-top: 11px;
 
       .fb{
         margin:0px 14px;
@@ -52,8 +54,8 @@
     }
 
     .agendar-cita-footer-desktop{
-      width: 184px;
-      height: 72px;
+      width: 287px;
+      height: 44px;
       display: flex;
       background-color:#FF7890;
       font-family: Montserrat;
@@ -67,14 +69,14 @@
       border-radius: 10px;
       border-color: transparent;
       color:white;
-      margin-top:20px;
+      margin-top:10px;
           }
   }
 
 
   .headtag-desktop{
-    height: 45px;
-    width: 1440px;
+    height: 109px;
+    width: 320px;
     font-size: 14px;
     line-height: 17px;
     background: rgba(246, 246, 246, 1);
@@ -82,7 +84,7 @@
     color:rgba(148, 148, 148, 1);
     align-items: center;
     display: flex;
-    flex-flow: row;
+    flex-flow: column;
     justify-content: center;
 
   }
@@ -97,6 +99,74 @@
     height: 25px;
   }
 }
+ /* MEDIA QUERIES */
 
+  /* 320 px */
+  @media (min-width: 320px) {
+    .white-container-desktop, .headtag-desktop{
+      width: 320px;
+    }
+    .headtag-desktop{
+      width: 320px;
+    }
+  }
+ /* 768 px */
+ @media (min-width: 768px){
+   .footer-container-desktop{
+     width: 768px;
+     height: 271px;
+     display: flex;
+     flex-direction: column;
 
+      .white-container-desktop{
+        width:768px;
+        display: flex;
+        flex-flow: row;
+        .agendar-cita-footer-desktop{
+          width: 184px;
+          height: 72px;
+        }
+      }
+      .headtag-desktop{
+        width: 768px;
+        height: 45px;
+        display: flex;
+        flex-direction:row;
+      }
+   }
 
+ }
+
+ @media (min-width: 1152px){
+  .footer-container-desktop{
+    width: 1152px;
+    height: 271px;
+    display: flex;
+    flex-direction: column;
+
+    .white-container-desktop{
+      width:1152px;
+      display: flex;
+    }
+    .headtag-desktop{
+      width: 1152px;
+
+      display: flex;
+      flex-direction:row;
+    }
+  }
+ }
+
+ @media (min-width: 1440px){
+  .footer-container-desktop{
+    width: 1440px;
+
+    .white-container-desktop{
+      width:1440px;
+
+    }
+    .headtag-desktop{
+      width: 1440px;
+    }
+  }
+}
