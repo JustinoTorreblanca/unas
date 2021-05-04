@@ -35,21 +35,22 @@ function NavbarNegroDesktop() {
               src={clounegro}
             ></input>
           </a>
-
-          <ol className="desktop-txt">
-            <a href="/servicios" className="anchor-servicios">
-              <li className="desktop-serv">Servicios</li>
-            </a>
-            <a href="/agendar-cita" className="anchor-servicios">
-              <li className="desktop-cita">Agendar Cita</li>
-            </a>
-            <a href="/contacto" className="anchor-servicios">
-              <li className="desktop-contacto">Contacto</li>
-            </a>
-            <a href="/nosotros" className="anchor-servicios">
-              <li className="desktop-nosotros">Nosotros</li>
-            </a>
-          </ol>
+                <div className="cont-desktop-txt">
+              <ol className="desktop-txt">
+                <a href="/servicios" className="anchor-servicios">
+                  <li className="desktop-serv">Servicios</li>
+                </a>
+                <a href="/agendar-cita" className="anchor-servicios">
+                  <li className="desktop-cita">Agendar Cita</li>
+                </a>
+                <a href="/contacto" className="anchor-servicios">
+                  <li className="desktop-contacto">Contacto</li>
+                </a>
+                <a href="/nosotros" className="anchor-servicios">
+                  <li className="desktop-nosotros">Nosotros</li>
+                </a>
+              </ol>
+          </div>
           <Link to="#" className="desk-menu-bars">
             <BiIcons.BiUserCircle size="2rem" />
           </Link>

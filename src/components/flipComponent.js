@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ReactCardFlip from "react-card-flip";
 import "./back-flipcard.styles.scss";
+import "./flip.styles.scss";
 
 
 import flechas from "../images/icon.png";
@@ -15,7 +16,7 @@ const CardFlip = () => {
   return (
     <>
       <ReactCardFlip isFlipped={isFlipped}>
-        <div className="services-front" onClick={handleClick}>
+        <div className="services-front-spa-polish" onClick={handleClick}>
           <h1 className="h3 card-services-titulo">Combo Spa Polish</h1>
           <span className="h4 card-services-price">$750</span>
           <span className="card-services-info">Más información</span>

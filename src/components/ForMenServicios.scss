@@ -21,14 +21,14 @@
 
     .for-word{
       font-size: 50px;
-      font-weight: 700;
+      font-weight: 500;
       color: white;
 
     }
 
     .men-word{
       font-size: 50px;
-      font-weight: 500;
+      font-weight: 700;
       color: white;
     }
     .linea{
@@ -71,7 +71,7 @@
       }
 
       .btn-info-blanco{
-        width: 176px;
+        width: 180px;
         height: 24px;
         background: transparent;
         font-size: 20px;
@@ -86,7 +86,22 @@
 
 
     }
-
+  .services-back-men{
+    width: 467px;
+    height: 390px;
+    justify-content: start;
+    padding-top: 40px;
+    .titulo{
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+    .txt-back{
+      font-size: 20px;
+      line-height: 24px;
+      width: 435px;
+      margin-bottom: 25px;
+    }
+  }
 
 
 }
@@ -126,3 +141,71 @@
     }
 }
 
+ /* MEDIA QUERIES */
+
+  /* 768 px */
+  @media (min-width: 768px) {
+    .mens-container-serv{
+      width: 768px;
+      height: 797px;
+      .for-word{
+        font-size: 85px;
+      }
+      .men-word{
+        font-size: 85px;
+      }
+      .linea{
+        width: 467px;
+      }
+      .servicio-hombre-blanco{
+        width: 467px;
+        height: 390px;
+        justify-content: center;
+      }
+    }
+  }
+
+  /* 1152 px */
+  @media (min-width: 1152px) {
+    .mens-container-serv{
+      width: 1152px;
+      height: 590px;
+
+      .men-word{
+        margin-bottom: -170px;
+        margin-left: -195px;
+        margin-top: -60px;
+      }
+      .for-word{
+        margin-left: 168px;
+        margin-top: -100px;
+      }
+      .linea{
+        display: none;
+      }
+
+      div.for-men-serv{
+        flex-direction: row;
+        justify-content: start;
+      }
+    }
+    .servicio-hombre-blanco{
+      margin-left: 120px;
+    }
+    .services-back-men{
+      margin-left: 120px;
+    }
+  }
+  /* 1440px */
+  @media(min-width: 1440px){
+    .mens-container-serv{
+      width: 1440px;
+      .for-word{
+        margin-left: 241px;
+    }
+    .servicio-hombre-blanco,.services-back-men{
+      width: 608px;
+      height: 390px;
+    }
+  }
+}

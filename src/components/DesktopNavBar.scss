@@ -1,7 +1,7 @@
 .clou-logo{
   display: flex;
-  width: 30vw;
-  height: 30vw;
+  width: 102px;
+  height: 84px;
   margin-top: 10vh;
 }
 
@@ -18,39 +18,25 @@
 
 }
 
-.dnavbar.active {
-  background: transparent;
-  top: -20px;
-}
-.desk-menu-bars {
-  padding-top: 38px;
-  background: none;
-}
 .logo-desk-header{
   width:106px;
   height: 88px;
-}
-.dnav-menu {
-  background-color: white;
-
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  position: fixed;
-  top: 0;
-  right: -100%;
-  transition: 850ms;
-}
-.dnav-menu.active {
-  right:0;
-  transition: 350ms;
-  z-index: 9999999;
-  width:100vw;
 }
 
 .logo-negro{
   display: flex;
   margin-left: -140px
+}
+
+.cont-desktop-txt{
+  display: none;
+  visibility: hidden;
+}
+
+.navbar-desktop{
+  width: auto;
+  display: flex;
+
 }
 
 .desktop-txt{
@@ -100,8 +86,13 @@
     .dnavbar{
       width: 300px;
       padding: 10px;
+      display: flex;
     }
+    .cont-desktop-txt{
+      height: 50px;
+      flex-direction: row;
 
+    }
   }
 
   /* 768 px */
@@ -109,17 +100,24 @@
     .dnavbar{
       width: 768px;
       padding: 0px 20px;
+      display: flex;
     }
-
+    .cont-desktop-txt{
+      visibility: collapse;
+    }
   }
 
   /* 1152 px */
   @media (min-width: 1152px) {
     .dnavbar{
       width: 1152px;
+      display: flex;
     }
-    .desktop-txt{
+    .cont-desktop-txt{
+      height: 50px;
       flex-direction: row;
+      display: flex;
+      visibility: visible;
     }
 
   }

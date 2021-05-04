@@ -87,3 +87,79 @@
   padding-bottom: 5px;
 
 }
+/* MEDIA QUERIES */
+/* 768 px */
+@media (min-width: 768px){
+  .container-marcas{
+    .titulo-marcas{
+      width: auto;
+      font-size: 30px;
+      line-height: 36.57px;
+      font-weight: 700;
+    }
+    .marcas-texto{
+      width: 514px;
+      height: 72px;
+      font-size: 20px;
+      line-height: 24.38px;
+      margin-bottom: 60px;
+    }
+    .logos{
+      width: 595px;
+      height: auto;
+      margin-bottom: 60px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+      .gelish{
+        margin: 0px;
+      }
+    }
+  }
+}
+@media(min-width: 1152px){
+  .container-marcas{
+    width: 1152px;
+    height: 512px;
+    flex-direction: row;
+    align-items: start;
+    .titulo-marcas{
+      width: 316px;
+      height: 74px;
+      margin-left: -100px;
+      margin-top: 100px;
+      padding-top: 0px;
+      text-align: left;
+    }
+    .marcas-texto{
+      text-align: left;
+      width: 314px;
+      height: 120px;
+      margin-top: 200px;
+      margin-left: -315px;
+      line-height: 24.38px;
+    }
+    .btn-agendar-marcas{
+      position: absolute;
+      margin-top: 350px;
+      margin-left: -315px;
+    }
+    .logos{
+      margin-top:140px;
+      justify-content: normal;
+    }
+  }
+}
+@media (min-width:1440px){
+  .container-marcas{
+    width: 1440px;
+    .titulo-marcas{
+      margin-left: -50px;
+    }
+    .logos{
+      margin-left: 150px;
+    }
+  }
+}

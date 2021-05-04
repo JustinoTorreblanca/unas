@@ -1,4 +1,4 @@
-.services-back{
+.services-back-sec-card, .services-back,.services-back-third{
   color: white;
   background-color: rgba(194, 135, 142, 1);
   width: 288px;
@@ -7,6 +7,7 @@
   flex-direction: column;
   align-items:center;
   justify-content: center;
+  /* margin-top: -25px; */
 
     .titulo{
       width: 268px;
@@ -22,13 +23,67 @@
       font-size: 14px;
       font-weight: 400;
       line-height: 17px;
+      margin-bottom: 26px;
+      margin-top:10px;
     }
 
     .turn-arrow{
       width: 20px;
       height: 20px;
+      margin-top: 17px;
 
     }
 }
 
-/* COMBO SPA GEL */
+
+
+/* MEDIA QUERIES */
+
+  /* 768 px */
+  @media (min-width: 768px) {
+    .services-back{
+      justify-content: start;
+      padding-top:40px;
+
+      .titulo{
+        width:435px;
+        height:37px;
+        font-size:30px;
+        line-height:36.57px;
+      }
+      .txt-back{
+        width: 435px;
+        font-size: 20px;
+        line-height: 24px;
+        margin-top: 10px;
+        margin-bottom: 26px;
+      }
+      .turn-arrow{
+        margin-top: 30px;
+      }
+    }
+    .services-back-sec-card{
+      .titulo{
+        font-size: 30px;
+        line-height: 36.57px;
+        width: 312px;
+      }
+      .txt-back{
+        font-size: 20px;
+        line-height: 24px;
+        width: 435px;
+      }
+    }
+    .services-back-third{
+      .titulo{
+        font-size: 30px;
+        line-height: 36.57px;
+        width: 312px;
+      }
+      .txt-back{
+        font-size: 20px;
+        line-height: 24px;
+        width: 435px;
+      }
+    }
+  }

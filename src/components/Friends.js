@@ -7,7 +7,10 @@ import { Link } from "react-router-dom";
 function Friends() {
   return (
     <>
+    <div className="friends-card">
+    <div className="img-friends">
       <img src={imgfrnd} alt="img" className="img-friends" />
+    </div>
       <div className="container-friends">
         <h1 className="titulo-friends">Clou Friends</h1>
         <p className="tres-amigas">
@@ -19,6 +22,7 @@ function Friends() {
           <span className="btn-agendar-amigas">Agendar cita</span>
         </Link>
       </div>
+    </div>
       <Footer />;
     </>
   );

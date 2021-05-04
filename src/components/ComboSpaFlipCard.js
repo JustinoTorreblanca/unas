@@ -15,13 +15,13 @@ const ComboSpaCard = () => {
   return (
     <>
       <ReactCardFlip isFlipped={isFlipped}>
-          <div className="second-card" onClick={handleClick}>
+          <div className="second-card serv-back-2" onClick={handleClick}>
             <h1 className="h3 card-services-titulo">Combo Spa Gel</h1>
             <span className="h4 card-services-price">$950</span>
             <span className="card-services-info">Más información</span>
           </div>
 
-        <div className="services-back" onClick={handleClick}>
+        <div className="services-back-sec-card" onClick={handleClick}>
           <span className="titulo">Manicure Spa Gel</span>
           <p className="txt-back">
             Limado y forma + cuidado de cutícula + exfoliante OPI + crema OPI +

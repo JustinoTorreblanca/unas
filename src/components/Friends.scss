@@ -2,11 +2,15 @@
   width: 100vw;
   height: 284px;
 }
-
+.friends-card{
+  display:flex;
+  flex-direction:column;
+}
 .container-friends{
   width: 100vw;
   height: auto;
   padding: 31px 16px;
+  background-color: rgba(246, 246, 246, 1);
 
     .titulo-friends{
       color:black;
@@ -45,4 +49,68 @@
       text-decoration: none;
       color: black;
     }
+}
+@media(min-width: 768px){
+  .img-friends{
+    background-image: url('../images/friends-768.png');
+    width: 768px;
+    height: 325px;
+  }
+  .container-friends{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    .titulo-friends{
+      font-size: 30px;
+      line-height: 36.57px;
+      margin-bottom: 24px;
+      margin-top: 56px;
+    }
+    .tres-amigas{
+      width: 606px;
+      height: 72px;
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 40px;
+    }
+  }
+}
+@media (min-width:1152px){
+  .friends-card{
+    display: flex;
+    flex-direction: row;
+    width: 1152px;
+    height: 650px;
+  }
+  .img-friends{
+    background-image: url('../images/friends-1152.png');
+    width: 576px;
+    height: 650px;
+  }
+  .container-friends{
+    .tres-amigas{
+      width: 404px;
+      height: 120px;
+      margin-bottom: 60px;
+    }
+  }
+}
+@media (min-width: 1440px){
+  .friends-card{
+    width: 1440px;
+
+  }
+  .img-friends{
+    background-image: url('../images//friends-1440.png');
+    width: 720px;
+  }
+  .container-friends{
+    .tres-amigas{
+      width: 404px;
+      height: 120px;
+      margin-bottom: 60px;
+    }
+  }
 }

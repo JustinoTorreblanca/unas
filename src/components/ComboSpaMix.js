@@ -15,13 +15,13 @@ const ComboMixCard = () => {
   return (
     <>
       <ReactCardFlip isFlipped={isFlipped}>
-          <div className="third-card" onClick={handleClick}>
-            <h1 className="h3 card-services-titulo">Combo Spa Mix</h1>
-            <span className="h4 card-services-price">$850</span>
-            <span className="card-services-info">Más información</span>
-          </div>
+        <div className="third-card" onClick={handleClick}>
+          <h1 className="h3 card-services-titulo">Combo Spa Mix</h1>
+          <span className="h4 card-services-price">$850</span>
+          <span className="card-services-info">Más información</span>
+        </div>
 
-        <div className="services-back" onClick={handleClick}>
+        <div className="services-back-third" onClick={handleClick}>
           <span className="titulo">Manicure Spa Gel</span>
           <p className="txt-back">
             Limado y forma + cuidado de cutícula + exfoliante OPI + crema OPI +

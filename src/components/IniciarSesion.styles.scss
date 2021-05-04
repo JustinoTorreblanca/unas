@@ -132,6 +132,27 @@
     .contenedor-agendar{
       width: 320px;
 
+      .form-iniciar-sesion{
+        flex-direction: column;
+        width: 320px;
+        height: auto;
+        align-items: center;
+      }
+      .correo-iniciar-sesion{
+        width: 288px;
+        margin: 0px;
+
+      }
+      .password{
+        margin-right: 0px;
+        margin-top: 16px;
+        width: 288px;
+      }
+      .agendar-cita-registro-iniciar-sesion{
+        width: 288px;
+        margin-bottom: 100px;
+      }
+
   }
 }
 
@@ -140,6 +161,20 @@
     .contenedor-agendar{
       width: 768px;
       height: 900px;
+
+      .correo-iniciar-sesion{
+        width: 316px;
+        margin: 0px;
+      }
+      .password{
+        margin-top: 0px;
+        margin-left: 24px;
+      }
+      .form-iniciar-sesion{
+        flex-direction: row;
+        width: auto;
+
+      }
 
       .datos{
         width: 448px;

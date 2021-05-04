@@ -4,9 +4,12 @@ import "./Agendar.styles.scss";
 import FooterDesktop from "./DesktopFooter";
 
 
+
 function Agendar() {
   return (
-    <>      <NavbarNegroDesktop className="navbar-desktop" />
+    <>
+      <NavbarNegroDesktop className="navbar-desktop" />
+
       <div className="contenedor-agendar">
         <h1 className="datos">Déjanos tus datos</h1>
         <h2 className="tu-cita">para agendar tu cita</h2>

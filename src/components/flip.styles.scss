@@ -1,0 +1,72 @@
+/* MEDIA QUERIES */
+
+  /* 768 px */
+  @media (min-width: 768px) {
+    .services-back{
+      margin-left: 200px;
+      width:467px;
+      height: 380px;
+      margin-top: -380px;
+    }
+    .services-back-third{
+      width:467px;
+          height:380px;
+          margin-top:15px;
+          margin-left: 240px;
+    }
+  }
+/* 1152 px */
+@media (min-width: 1152px){
+  .services-back{
+    margin-left: 470px;
+  }
+  .services-back-third{
+    margin-left:520px;
+  }
+
+  .rectangle{
+    background-image: url('../images/rect-1152.png');
+    width:1152px;
+    height: 600px;
+    justify-content: start;
+
+    .cont{
+      width: 518px;
+      margin-top:123px;
+      margin-left: 534px;
+      align-content: flex-start;
+      justify-content: start;
+    }
+    .fuera{
+      width: 528px;
+      font-size: 50px;
+
+    }
+    .acrilico{
+      font-size: 30px;
+      line-height: 36.57px;
+      width: 518px;
+      height: 111px;
+      text-align: left;
+    }
+    .desde{
+      font-size: 30px;
+      line-height: 36.57px;
+      font-weight: 700;
+      width: 518px;
+      text-align: left;
+    }
+  }
+}
+@media (min-width: 1440px){
+  /* FIRST CARD */
+  .services-back{
+    width: 608px;
+    margin-left:615px;
+  }
+
+  .rectangle{
+    width: 1440px;
+    height: 600px;
+  }
+}
