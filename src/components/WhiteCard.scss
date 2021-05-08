@@ -8,6 +8,70 @@
   text-align: center;
   align-self: center;
   padding: 60px 16px;
-  margin-left: 18px;
+  background-color: rgba(255, 255, 255, 1);
+  .text-whitecard1{
+    width: 288px;
+    height: 168px;
+    line-height: 24px;
+  }
+  .text-whitecard2{
+    width: 288px;
+    height: 288px;
+    line-height: 24px;
+  }
+}
+@media (min-width: 768px){
+  .container-whitecard{
+    width: 758px;
+    height: 404px;
+    padding-top: 0px;
+    margin-top: 134px;
 
+    .text-whitecard1{
+      width: 688px;
+      height: 72px;
+      margin-left:40px;
+
+      margin-bottom: 24px;
+    }
+    .text-whitecard2{
+      width: 688px;
+      height: 120px;
+      margin-left:40px;
+    }
+  }
+}
+@media (min-width: 1152px){
+  .container-whitecard{
+    width: 1112px;
+    margin-top: 134px;
+
+    .text-whitecard1{
+      width: 790px;
+      margin-left:181px;
+
+    }
+    .text-whitecard2{
+      width: 790px;
+      margin-left:181px;
+    }
+  }
+}
+@media (min-width: 1440px){
+  .container-whitecard{
+    width: 1410px;
+    height: 431px;
+    margin-top: 132px;
+    .text-whitecard1{
+      width: 955px;
+      height: 48px;
+      margin-left:242px;
+
+    }
+    .text-whitecard2{
+      width: 955px;
+      height: 96px;
+      margin-left:245px;
+    }
+  }
 }

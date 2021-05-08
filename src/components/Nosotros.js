@@ -1,5 +1,5 @@
 import React from "react";
-import NavbarNegro from "./NavbarNegro";
+import DesktopNavbar from "./DesktopNavBar";
 import "./Nosotros.scss";
 import WhiteCard from "./WhiteCard";
 import Conocelas from "./Conocelas";
@@ -9,7 +9,7 @@ function Nosotros() {
   return (
     <>
       <div className="background-nosotros">
-        <NavbarNegro />
+        <DesktopNavbar />
         <h1 className="nosotros-titulo">¿Quiénes somos?</h1>
         <p className="nosotros-txt">
           Clou nace para dar oportunidad a quienes necesitan generar ingresos

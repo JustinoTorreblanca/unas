@@ -1,5 +1,5 @@
 .container-conocelas{
-  width: 360px;
+  width: 320px;
   height: 864px;
   background-color: rgba(246, 246, 246, 1);;
   padding: 60px 16px 100px 16px;
@@ -43,12 +43,14 @@
     font-size: 20px;
     line-height: 24px;
     text-align: center;
-    margin: 0px 0px 60px 25px;
+    width: 288px;
+    height: 120px;
+
   }
   .img-flecha-izq{
     width: 16px;
     height: 16px;
-    margin: 60px 36px 0px 130px;
+    margin: 60px 36px 0px 110px;
   }
   .img-flecha-der{
     width: 16px;
@@ -58,8 +60,130 @@
 
 
   .card-conocelas{
-    width:328px;
+    width:320px;
     height: 460px;
     /* margin-bottom: 60px; */
+    .div.slide.active{
+      width:320px;
+    }
+  }
+}
+@media (min-width: 768px){
+  .container-conocelas{
+    width: 768px;
+    height: 700px;
+    .ellas-conocelas{
+      width: 688px;
+    }
+    .card-conocelas{
+      width: 660px;
+      height: 264px;
+      display: flex;
+      margin-left: 54px;
+      .slide.active{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 58px;
+      }
+    }
+    .nombre-conocelas{
+      width: 372px;
+      height: 37px;
+      text-align: left;
+      margin-left: 24px;
+      margin-top: 0px;
+    }
+    .txt-conocelas{
+      width: 372px;
+      height: 96px;
+      margin-top: 150px;
+      margin-left: -380px;
+    }
+    .img-flecha-izq{
+      margin-left: 656px;
+    }
+  }
+}
+@media (min-width: 1152px){
+  .container-conocelas{
+    width: 1152px;
+    height: 634px;
+    .ellas-conocelas{
+      width: 868px;
+      margin-left: 142px;
+    }
+    .card-conocelas{
+      width: 696px;
+      height: 260px;
+      display: flex;
+      margin-left: 228px;
+      .slide.active{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 60px;
+      }
+    }
+    .nombre-conocelas{
+      width: 73px;
+      margin-left: 60px;
+      margin-top: 0px;
+    }
+    .txt-conocelas{
+      width: 376px;
+      height: 96px;
+      margin-top: 150px;
+      margin-left: -84px;
+    }
+    .img-flecha-izq{
+      margin-left: 110px;
+      margin-top: -10px;
+    }
+    .img-flecha-der{
+      margin-left: 856px;
+    }
+  }
+}
+@media (min-width: 1440px){
+  .container-conocelas{
+    width: 1440px;
+    height: 634px;
+    .ellas-conocelas{
+      width: 868px;
+      margin-left: 286px;
+    }
+    .card-conocelas{
+      width: 928px;
+      height: 260px;
+      display: flex;
+      margin-left: 250px;
+      .slide.active{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 58px;
+      }
+    }
+    .nombre-conocelas{
+      width: 73px;
+      height: 37px;
+      text-align: left;
+      margin-left: 60px;
+      margin-top: 0px;
+    }
+    .txt-conocelas{
+      width: 608px;
+      height: 96px;
+      margin-top: 150px;
+      margin-left: -108px;
+    }
+    .img-flecha-izq{
+      margin-left: 110px;
+      margin-top: -10px;
+    }
+    .img-flecha-der{
+      margin-left: 1100px;
+    }
   }
 }

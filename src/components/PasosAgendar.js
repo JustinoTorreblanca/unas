@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import NavbarNegroDesktop from "./DesktopNavBar";
 import "./PasosAgendar.scss";
 import FooterDesktop from "./DesktopFooter";
@@ -14,9 +14,30 @@ import PopUpAgregarOtraPersona from "./AgregrarPersPopUp"
 
 
 function PasosAgendar() {
+  const [datos, setDatos] = useState({
+    polanco: '',
+    lomas: '',
+    santafe: '',
+    condesa: '',
+    bosques: '',
+    interlomas:'',
+    tecamachalco: '',
+    olivo: '',
+    chamizal: '',
+    carzo: ''
+  });
 
+const handleInputChange = (event) =>{
+  setDatos({
+    ...datos,
+    [event.target.name] : event.target.value
+  })
+}
 
-
+const enviarDatos = (event) => {
+  event.preventDefault();
+  console.log({datos})
+}
 
 
   return (
@@ -30,25 +51,35 @@ function PasosAgendar() {
         </div>
 
         <div className="wrap-radio-buttons">
+        <form className="form-zona" onSubmit={enviarDatos}>
           <div className="primera-seccion">
-            <input type="radio" className="radio-button" name="zona" />
+            <input type="radio" className="radio-button" name="polanco"
+            onChange={handleInputChange}/>
             <label for="Polanco">Polanco</label>
-            <input type="radio" className="radio-button" name="zona" />
+            <input type="radio" className="radio-button" name="lomas"
+            onChange={handleInputChange}/>
             <label for="Lomas">Lomas</label>
-            <input type="radio" className="radio-button" name="zona" />
+            <input type="radio" className="radio-button" name="santafe"
+            onChange={handleInputChange}/>
             <label for="Santa Fé">Santa Fé</label>
-            <input type="radio" className="radio-button" name="zona" />
+            <input type="radio" className="radio-button" name="condesa"
+            onChange={handleInputChange}/>
             <label for="Condesa">Condesa</label>
-            <input type="radio" className="radio-button" name="zona" />
+            <input type="radio" className="radio-button" name="bosques"
+            onChange={handleInputChange}/>
             <label for="Bosques">Bosques</label>
+
           </div>
 
           <div className="segunda-seccion">
-            <input type="radio" className="radio-button" name="zona" />
+            <input type="radio" className="radio-button" name="interlomas"
+            onChange={handleInputChange}/>
             <label for="Interlomas">Interlomas</label>
-            <input type="radio" className="radio-button" name="zona" />
+            <input type="radio" className="radio-button" name="tecamachalco"
+            onChange={handleInputChange}/>
             <label for="Tecamachalco">Tecamachalco</label>
-            <input type="radio" className="radio-button" name="zona" />
+            <input type="radio" className="radio-button" name="olivo"
+            onChange={handleInputChange}/>
             <label for="El Olivo">El Olivo</label>
           </div>
           <div className="tercera-seccion">
@@ -56,17 +87,20 @@ function PasosAgendar() {
               type="radio"
               value="El Chamizal"
               className="radio-button"
-              name="zona"
+              name="chamizal"
+              onChange={handleInputChange}
             />
             <label for="El Chamizal">El Chamizal</label>
             <input
               type="radio"
               value="Plaza Carzo"
               className="radio-button"
-              name="zona"
+              name="carzo"
+              onChange={handleInputChange}
             />
             <label for="Plaza Carzo">Plaza Carzo</label>
           </div>
+        </form>
         </div>
       </div>
 
@@ -177,14 +211,14 @@ function PasosAgendar() {
 
 
       <div className="cont-boton-guardar">
-        <a href="/" className="anchor-pasos">
+        {/* <a href="/" className="anchor-pasos"> */}
           <input
-            type="button"
+            type="submit"
             className="agendar-guardar-pasos"
             value="Guardar y agendar cita"
-            href="#"
+
           />
-        </a>
+       {/*  </a> */}
       </div>
 
       <FooterDesktop />

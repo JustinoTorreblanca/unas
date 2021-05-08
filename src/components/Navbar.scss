@@ -98,3 +98,18 @@ span:hover {
   display: flex;
   margin-left: -140px
 }
+@media (min-width: 768px){
+  .navbar{
+    width: 758px;
+  }
+}
+@media (min-width: 1152px){
+  .navbar{
+    width: 1142px;
+  }
+}
+@media (min-width: 1440px){
+  .navbar{
+    width: 1430px;
+  }
+}

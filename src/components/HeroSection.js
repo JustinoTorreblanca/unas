@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "../App.css";
 import "./HeroSection.scss";
 /* import Scroll from "../components/Scroll.component"; */
@@ -11,6 +11,24 @@ import scrll from "../images/scrll.png";
 
 
 function HeroSection() {
+  const [datos, setDatos] = useState({
+    nombre: '',
+    correo: ''
+  })
+
+  const handleInputChange = (event) => {
+    /* console.log(event.target.value) */
+    setDatos({
+      ...datos,
+      [event.target.name] : event.target.value
+    })
+  }
+
+  const enviarDatos = (event) => {
+    event.preventDefault();
+    console.log(datos.nombre + ' ' + datos.correo)
+  }
+
   return (
     <div className="background">
       <div className="hero-container">
@@ -20,6 +38,7 @@ function HeroSection() {
         <h2 className="dia que">el día que quieras</h2>
         <h2 className="dia cas">y sin salir de casa</h2>
         <div className="inpt">
+          <form className="form-hero" onSubmit={enviarDatos}>
           <input
             type="text"
             className="nombre"
@@ -27,24 +46,27 @@ function HeroSection() {
             required
             minLength="4"
             maxLength="10"
+            name="nombre"
+            onChange={handleInputChange}
           />
           <input
             type="email"
             className="email"
             placeholder="✉ Ingresa tu correo electrónico"
+            name="correo"
+            onChange={handleInputChange}
           />
-          <Link to="/agendar-cita" className="link-agendar-cita">
+
+          {/* <Link to="/agendar-cita" className="link-agendar-cita"> */}
             <button
-              type="button"
+              type="submit"
               className="agendar-cita"
               value="Agendar cita"
-              /* href="/agendar-cita"
-                    onClick={Agendar} */
             >
               Agendar cita
             </button>
-          </Link>
-
+          {/* </Link> */}
+          </form>
           <input
             type="button"
             className="inicia-sesion"

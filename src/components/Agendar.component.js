@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import NavbarNegroDesktop from "./DesktopNavBar";
 import "./Agendar.styles.scss";
 import FooterDesktop from "./DesktopFooter";
@@ -6,6 +6,24 @@ import FooterDesktop from "./DesktopFooter";
 
 
 function Agendar() {
+  const [datos, setDatos] = useState({
+    nombre: '',
+    correo: '',
+    telefono: ''
+  })
+
+  const handleInputChange = (event) => {
+    setDatos({
+      ...datos,
+      [event.target.name] : event.target.value
+    })
+  }
+
+  const enviarDatos = (event) => {
+    event.preventDefault();
+    console.log(datos.nombre, datos.correo, datos.telefono)
+  }
+
   return (
     <>
       <NavbarNegroDesktop className="navbar-desktop" />
@@ -14,31 +32,38 @@ function Agendar() {
         <h1 className="datos">Déjanos tus datos</h1>
         <h2 className="tu-cita">para agendar tu cita</h2>
 
-        <form className="form-registro">
+        <form className="form-registro" onSubmit={enviarDatos}>
           <input
             type="text"
+            name="nombre"
             className="name"
             placeholder="&#x263a;Ingresa tu nombre"
+            onChange={handleInputChange}
           ></input>
           <input
             type="email"
+            name="correo"
             className="correo"
             placeholder="✉ Ingresa tu correo electrónico"
+            onChange={handleInputChange}
           ></input>
           <input
             type="tel"
+            name="telefono"
             className="telephone"
             placeholder="&#9742; Teléfono*"
+            onChange={handleInputChange}
           ></input>
-        </form>
-        <a href="/pasos" className="agendar-cita-registro">
+
+        {/* <a href="/pasos" className="agendar-cita-registro"> */}
           <input
-            type="button"
+            type="submit"
             className="agendar-cita-registro"
             value="Agendar cita"
             href="/pasos"
           />{" "}
-        </a>
+        {/* </a> */}
+        </form>
         <a href="/inicia-sesion" className="anchor-iniciar-sesion">
           <button
             type="button"

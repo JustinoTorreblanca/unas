@@ -16,6 +16,9 @@
       display: flex;
       width: 924px;
       height: auto;
+      form.form-zona{
+        display: contents;
+      }
 
       .titulo-zona{
         width: 924px;
@@ -369,4 +372,20 @@
     height: 20px;
   }
 
+}
+@media (min-width:1152px){
+  .agendar-container{
+    width: 1152px;
+    div.cont-boton-guardar{
+      width: 1152px;
+    }
+    .anchor-pasos{
+      width: 1152px;
+    }
+  }
+}
+@media(min-width:1440px){
+  .agendar-container{
+    width:1440px;
+  }
 }

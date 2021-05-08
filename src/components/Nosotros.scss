@@ -24,7 +24,7 @@
     font-size: 30px;
     line-height: 36.57px;
     text-align: center;
-    margin:510px 16px 100px 36px;
+    margin:510px 16px 100px 16px;
     color: white;
     width: 288px;
     height: 259px;
@@ -36,16 +36,103 @@
 .pink-card{
   background-color: rgba(194, 135, 142, 1);
   color: white;
-  width: 360px;
+  width: 320px;
   height: 453px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36.57px;
-  padding:60px 16px 60px 36px;
+  padding:60px 16px 60px 16px;
   text-align: center;
 
   .pink-card-txt{
     width: 288px;
   height: 333px;
+  }
+}
+@media (min-width: 768px){
+  .background-nosotros{
+    background-image: url('../images/nos-768.png');
+    width:768px;
+    height: 808px;
+    .nosotros-titulo{
+      width: 458px;
+      height: 61px;
+      padding-top: 499px;
+      margin-left: 155px;
+    }
+    .nosotros-txt{
+      width: 736px;
+      height: 111px;
+      margin-top: 574px;
+    }
+  }
+  .pink-card{
+    width: 768px;
+    height: 348px;
+    padding: 100px 40px 100px 47px;
+    .pink-card-txt{
+      width: 681px;
+      height: 148px;
+    }
+  }
+}
+
+@media (min-width: 1152px){
+  .background-nosotros{
+    background-image: url('../images/nos-1152.png');
+    width:1152px;
+    .nosotros-titulo{
+      padding-top: 499px;
+      margin-left: 347px;
+    }
+    .nosotros-txt{
+      width: 778px;
+      height: 111px;
+      margin-top: 574px;
+      margin-left:187px;
+    }
+  }
+  .desktop-txt{
+    .cita-negro{
+      color:black;
+    }
+  }
+  .pink-card{
+    width: 1152px;
+    height: 311px;
+    padding: 100px 181px 100px 181px;
+    .pink-card-txt{
+      width: 790px;
+      height: 111px;
+    }
+  }
+}
+
+@media (min-width:1440px){
+  .background-nosotros{
+    background-image: url('../images/nos-1440.png');
+    width:1440px;
+
+    .nosotros-titulo{
+      margin-left: 491px;
+    }
+    .nosotros-txt{
+      width: 868px;
+      height: 74px;
+      margin-top: 574px;
+      margin-left: 286px
+    }
+  }
+  .desktop-txt{
+    .cita-negro{
+      color:black;
+    }
+  }
+  .pink-card{
+    width: 1440px;
+    padding: 100px 244px 100px 244px;
+    .pink-card-txt{
+      width: 952px;
+    }
   }
 }
