@@ -2,7 +2,7 @@ import React from "react";
 import "./CardDomicilio.scss";
 import flechapasos from "../images/iconopasos.png";
 
-function CardDomicilio() {
+function CardDomicilio(props) {
   return (
     <div className="container-domicilio-pasos">
       <div className="pasos-domicilio">
@@ -19,51 +19,58 @@ function CardDomicilio() {
             <input
               type="radio"
               className="radio-btn-efectivo"
-              name="dirreccion"
+              name="direccion"
+              id="direccion registrada"
+              onChange={props.handleChange}
+              value="registrada"
+
             />
-            <label className="dir">Dirección registrada</label>
+            <label className="dir" htmlFor="direccion registrada">Dirección registrada</label>
           </div>
           <div className="nueva-dir">
             <input
               type="radio"
               className="radio-btn-efectivo"
-              name="dirreccion"
+              name="direccion"
+              id="agregar direccion"
+              onChange={props.handleChange}
+              value="agregar direccion"
             />
-            <label className="dir-nueva">Agregar nueva dirección</label>
+            <label className="dir-nueva" htmlFor="agregar direccion" >Agregar nueva dirección</label>
           </div>
         </div>
         <div className="contenedor-inputs">
           <div className="txt-calle-pasos">
             <div className="calle-pasos">
               <label className="txt-pas">Calle*</label>
-              <input type="text" className="txt-calle" />
+              <input type="text" className="txt-calle" onChange={props.handleChange} name="calle" />
             </div>
             <div className="cp-pasos">
               <label className="txt-pas">CP</label>
-              <input type="text" className="txt-cp" />
+              <input type="number" className="txt-cp" onChange={props.handleChange} name="CP"/>
             </div>
             <div className="fracc">
               <label className="txt-pas">Fraccionamiento</label>
-              <input type="text" className="txt-fracc" />
+              <input type="text" className="txt-fracc" onChange={props.handleChange} name="fraccionamiento"/>
             </div>
           </div>
           <div className="wrap-num-colonia">
             <div className="numero-pasos">
               <label className="txt-pas">Número</label>
-              <input type="text" className="txt-col" />
+              <input type="number" className="txt-col" onChange={props.handleChange} name="numero exterior"/>
             </div>
             <div className="colonia-pasos">
               <label className="txt-pas">Colonia*</label>
-              <input type="text" className="txt-num" />
+              <input type="text" className="txt-num" onChange={props.handleChange} name="colonia"/>
             </div>
             <label className="txt-requiere">
               ¿Se requiere pasar por caseta?
             </label>
             <div className="inpts-caseta">
-              <input type="radio" className="txt-caseta" name="si" />
-              <label className="txt-si">Si</label>
-              <input type="radio" className="txt-caseta" name="si" />
-              <label className="txt">No</label>
+              <input type="radio" className="txt-caseta" name="caseta" onChange={props.handleChange} value="si" id="yes"/>
+              <label className="txt-si" htmlFor="yes">Si</label>
+              <input type="radio" className="txt-caseta" name="caseta" onChange={props.handleChange} value="no" id="not"/>
+              <label className="txt" htmlFor="not">No</label>
             </div>
           </div>
         </div>

@@ -89,6 +89,17 @@
       width: 924px;
       height: auto;
       margin-bottom: 40px;
+      .titulo-regalo{
+          width: 924px;
+        height: 72px;
+        background-color: #c2878e;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 36.57px;
+        text-align: center;
+        color: white;
+        padding: 18px 0;
+      }
     }
     .titulo-dia{
       width: 924px;
@@ -258,6 +269,7 @@
     justify-content:center;
     display: flex;
     align-items:center;
+
   }
   .wrap-nombre{
     background-color:white;
@@ -282,11 +294,18 @@
     line-height: 24px;
     margin-left: 24px;
     padding-top: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    width:200px;
+    .si-regalo{
+      margin-right: 24px;
+    }
   }
   .regalo-txt{
     font-size: 30px;
     font-weight: 700;
     line-height: 36.5px;
+    width:350px;
   }
   /* PASOS PARA REGALO */
   .container-datos-regalo{
@@ -370,6 +389,7 @@
   .radio-button{
     width: 20px;
     height: 20px;
+    margin-top: 2px;
   }
 
 }

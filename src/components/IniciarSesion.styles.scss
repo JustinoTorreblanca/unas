@@ -85,7 +85,7 @@
     .agendar-cita-registro-iniciar-sesion{
       width: 184px;
       height: 72px  ;
-      display: flex;
+      /* display: flex; */
       background-color:#FF7890;
       font-family: Montserrat;
       font-weight: bold;
@@ -97,6 +97,7 @@
       border-radius: 10px;
       border-color: transparent;
       color:white;
+      margin-left: 16px;
     }
 
     .inicia-sesion-registro{
@@ -162,6 +163,10 @@
       width: 768px;
       height: 900px;
 
+      .agendar-cita-registro-iniciar-sesion{
+        margin-left:250px;
+      }
+
       .correo-iniciar-sesion{
         width: 316px;
         margin: 0px;
@@ -219,6 +224,9 @@
     width: 1152px;
     height: 680px;
 
+    .agendar-cita-registro-iniciar-sesion{
+        margin-left:450px;
+      }
 
     .tu-cita{
       width: 536px;
@@ -261,5 +269,8 @@
   .contenedor-agendar{
     width: 1440px;
     height:800px;
+    .agendar-cita-registro-iniciar-sesion{
+        margin-left:600px;
+      }
   }
  }

@@ -2,6 +2,8 @@ import React from "react";
 import NavbarNegroDesktop from "./DesktopNavBar";
 import "./IniciarSesion.styles.scss";
 import FooterDesktop from "./DesktopFooter";
+import { Link } from 'react-router-dom'
+
 
 function IniciarSesion() {
   return (
@@ -23,12 +25,14 @@ function IniciarSesion() {
             placeholder="&#128274; Contraseña*"
           ></input>
         </form>
-        <input
-          type="button"
-          className="agendar-cita-registro-iniciar-sesion"
-          value="Agendar cita"
-          href="/"
-        />
+        <Link to="pasos">
+          <button
+            type="button"
+            className="agendar-cita-registro-iniciar-sesion"
+            value="Agendar cita"
+          >Agendar cita
+          </button>
+        </Link>
       </div>
       <FooterDesktop />
     </>

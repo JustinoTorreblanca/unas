@@ -57,7 +57,7 @@ function HeroSection() {
             onChange={handleInputChange}
           />
 
-          {/* <Link to="/agendar-cita" className="link-agendar-cita"> */}
+          <Link to="/agendar-cita" className="link-agendar-cita">
             <button
               type="submit"
               className="agendar-cita"
@@ -65,7 +65,7 @@ function HeroSection() {
             >
               Agendar cita
             </button>
-          {/* </Link> */}
+          </Link>
           </form>
           <input
             type="button"

@@ -2,11 +2,20 @@ import React from "react";
 import "./CardMetodoPago.scss";
 import flechapasos from "../images/iconopasos.png";
 
-function CardMetodoPago() {
+function CardMetodoPago(props) {
+  /* const [pago, setPago] = useState({ });
+
+  const handleChange = (e) => {
+    setPago({
+      ...pago,
+      [e.target.name]: e.target.value
+    })
+  } */
+
   return (
     <div className="container-metodo-pago">
       <div className="zona-pago">
-        <span className="titulo-zona-pago">¿En qué zona te encuentras?</span>
+        <span className="titulo-zona-pago">Método de pago</span>
         <img src={flechapasos} alt="flecha" className="flecha-pasos"></img>
       </div>
       <div className="wrap-pago">
@@ -16,8 +25,13 @@ function CardMetodoPago() {
               type="radio"
               className="radio-btn-efectivo"
               name="modo-pago"
+              value="efectivo"
+              onChange={props.handleChange}
+              id="efectivo"
             />
-            <label className="efectivo">Efectivo</label>
+            <label className="efectivo" htmlFor="efectivo">
+              Efectivo
+            </label>
           </div>
 
           <div className="cont-tarjeta">
@@ -25,8 +39,11 @@ function CardMetodoPago() {
               type="radio"
               className="radio-btn-tarjeta"
               name="modo-pago"
+              value="tarjeta"
+              onChange={props.handleChange}
+              id="tarjeta"
             />
-            <label className="tarjeta">
+            <label className="tarjeta" htmlFor="tarjeta">
               Tarjeta de crédito o débito con terminal
             </label>
           </div>
@@ -36,8 +53,13 @@ function CardMetodoPago() {
               type="radio"
               className="radio-btn-transferencia"
               name="modo-pago"
+              value="transferencia"
+              onChange={props.handleChange}
+              id="transferencia"
             />
-            <label className="transferencia">Transferencia interbancaria</label>
+            <label className="transferencia" htmlFor="transferencia">
+              Transferencia interbancaria
+            </label>
           </div>
         </form>
         <div className="datos-banco">

@@ -1,0 +1,157 @@
+:root {
+  --black: rgb(58, 58, 58);
+  --grey: rgb(205, 205, 205);
+  --white: rgb(240, 240, 240);
+  --red: rgb(206, 36, 36);
+  --light-blue: rgb(102, 193, 255);
+  --font-light: "AirbnbCerealLight", sans-serif;
+  --font-book: "AirbnbCerealBook", sans-serif;
+  --font-black: "AirbnbCerealBlack", sans-serif;
+  color: var(--black);
+  font-family: var(--font-light);
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+
+  -webkit-font-smoothing: antialiased;
+}
+.contenedor-calendario{
+  width:311px;
+  height:288px;
+  background-color: white;
+  display: flex;
+  justify-content: start;
+  flex-direction:column;
+
+  .barra-mes{
+    width: 300px;
+    height: 30px;
+    background-color:white;
+    border: 1px solid gray;
+    margin-top:5px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items:center;
+    position: absolute;
+    margin-left:6px;
+    .mes-header{
+      width:250px;
+    }
+    .mes-titulo{
+      font-size: 25px;
+      margin-left: 8px;
+      font-weight: 600;
+    }
+  }
+  .next{
+    width:17px;
+
+    border-style:none;
+    background-color:transparent;
+  }
+  .previous{
+    width:17px;
+    border-style:none;
+    background-color:transparent;
+  }
+  .previous:hover, .next:hover{
+    cursor: pointer;
+  }
+  .dias-semana{
+    display:flex;
+    flex-direction:row;
+    width: 275px;
+    height:20px;
+    justify-content:space-between;
+    margin-top:45px;
+    margin-left: 16px;
+    font-weight: 600;
+  }
+  .calendar{
+    width:auto;
+
+
+    .day{
+      width: calc(100% / 7);
+      display: inline-block;
+      background-color: white;
+      box-sizing: border-box;
+      z-index: 1;
+      text-align: center;
+      height: 40px;
+      font-size: 14px;
+    }
+
+    .calendar .day {
+      position: relative;
+      width: calc(100% / 7);
+      height: 44px;
+      display: inline-block;
+      background-color: white;
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      z-index: 1;
+      text-align: center;
+    }
+
+    .day div {
+
+      height: 44px;
+     /*  position: relative; */
+      /* color: var(--black); */
+      z-index: 100;
+      line-height: 44px;
+    }
+
+
+
+    .day div.selected {
+      background-color: var(--red);
+      color: var(--white);
+      font-weight: bold;
+    }
+
+    .day .today {
+      background-color: var(--grey);
+    }
+
+  }
+  div.before{
+
+    color: var(--grey)
+  }
+  .dias-calendario{
+    width:322px;
+    list-style:none;
+    display:grid;
+    grid-template-columns: repeat(7, .135fr);
+    margin-left:3px;
+    margin-top:10px;
+    font-size:14px;
+    text-align:center;
+  }
+  /* .name-mes{
+    width:100px;
+    height:60px;
+  } */
+  .mes-header{
+    height: 50px;
+  }
+}
+.container-botones-mes{
+  width: 40px;
+  display: flex;
+  font-size: 30px;
+  text-align: center;
+  .previous{
+    margin-right: 5px;
+  }
+
+}
+.calendar .day div.selected {
+  background-color: var(--red);
+  color: var(--white);
+  font-weight: bold;
+}
