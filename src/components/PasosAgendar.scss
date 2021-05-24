@@ -274,7 +274,7 @@
   .wrap-nombre{
     background-color:white;
     width: 924px;
-    height: 490px;
+    height: auto ;
     margin-top: -38px;
     padding: 40px 64px 64px 150px;
   }
@@ -310,6 +310,23 @@
   /* PASOS PARA REGALO */
   .container-datos-regalo{
     margin: 24px 0px;
+    padding:0px;
+    .zona-dia{
+      display: flex;
+      width: 924px;
+      height: auto;
+      .titulo-dia{
+        width: 924px;
+    height: 72px;
+    background-color: #c2878e;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36.57px;
+    text-align: center;
+    color: white;
+    padding: 18px 0;
+      }
+    }
   }
 
 

@@ -3,58 +3,54 @@
   height: 390px;
 }
 .cont-modal{
-  width: 768px;
+  width: auto;
   height: 3620px;
+  background: #c4c4c480;
+  position: fixed;
+transition: all 500ms ease-in-out;
+  z-index: 999;
+  top:0;
+  right: 0;
+  bottom:0;
+  left:0;
 }
-
-.boton-otra-per{
-  width: 280px;
-  height: 24px;
-  background-color: white;
-  border-color: transparent;
-  display: flex;
-  margin-top: 64px;
-  margin-left: 179px;
+.card-modal{
+  width: 559px;
+  height: 500px;
+  position: absolute;
+  margin-left: 230px;
+  margin-top:80px;
+  padding:20px;
+  z-index: 9999;
+  background-color:white;
 }
-.agregar-persona{
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  color: black;
-  padding: 9px;
-}
-
 .close-button{
+  margin-left:500px;
   width: 22px;
   height: 21.93px;
-  margin-left:502px;
 }
-
 .h1-agregas{
   font-weight: 400;
   font-size: 30px;
   line-height: 36.57px;
-  margin: 40px 217px 24px 62px;
+  margin: 40px 7px 24px 62px;
 }
-
 .personas{
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  margin-right: 460px;
+  margin-right: 140px;
 }
-
 .bold-registrar{
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  margin-right: 460px;
 }
 
 .radio-add{
   width: 20px;
   height: 20px;
-  margin:24px 8px 24px 64px;
+  margin:4px 8px 34px 64px;
 }
 .boton-agregar{
   width:22px;
@@ -73,6 +69,23 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  margin-left:310px;
-  margin-top: 25px;
+  margin-left:260px;
+  margin-top: 20px;
+}
+.agregar-persona{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: black;
+  padding: 9px;
+}
+
+.boton-otra-per{
+  width: 280px;
+  height: 24px;
+  background-color: white;
+  border-color: transparent;
+  display: flex;
+  margin-top: 64px;
+  margin-left: 179px;
 }

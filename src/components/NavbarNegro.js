@@ -30,7 +30,7 @@ function NavbarNegro() {
           <Link to="#" className="menu-bars">
             <FaIcons.FaBars size="2rem" color="black" onClick={showSidebar} />
           </Link>
-          <a href="/" alt="logo">
+          <Link to={Home} alt="logo">
             <input
               className="logo-header"
               href="/"
@@ -38,7 +38,7 @@ function NavbarNegro() {
               alt="log"
               src={logonosotros}
             ></input>
-          </a>
+          </Link>
         </div>
         <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
           <ul className="nav-menu-items" onClick={showSidebar}>
@@ -46,13 +46,14 @@ function NavbarNegro() {
               <Link to="#" className="menu-bars">
                 <AiIcons.AiOutlineClose size="2rem" />
               </Link>
-              <img
-                src={clounegro}
-                alt="logo"
-                className="logo-negro"
-                href="/home"
-              ></img>
-              <Link to={Home}></Link>
+              <Link to={Home}>
+                      <img
+                        src={clounegro}
+                        alt="logo"
+                        className="logo-negro"
+                        href="/home"
+                      ></img>
+              </Link>
             </li>
             {SidebarData.map((item, index) => {
               return (

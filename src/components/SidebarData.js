@@ -14,7 +14,7 @@ export const SidebarData = [
   },
   {
     title: "Contacto",
-    path: "/contacto",
+    path: "/nosotros",
     cName: "nav-text",
   },
   {
@@ -24,7 +24,7 @@ export const SidebarData = [
   },
   {
     title: "",
-    path: "/cuenta",
+    path: "/mi-cuenta",
     icon: <BiIcons.BiUserCircle size="2rem" />,
     cName: "nav-text",
   },

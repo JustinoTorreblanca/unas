@@ -1,0 +1,87 @@
+.contenedor-confirmacion{
+  width: 1440px;
+  height:780px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(246, 246, 246, 1);
+
+  .tu-cita-registrada{
+      color: black;
+      width: 666px;
+      height: 122px;
+      font-weight: 700;
+      font-size: 50px;
+      line-height: 60.95px;
+      text-align: center;
+      align-self: center;
+      margin-top: 177px;
+      margin-bottom: 16px;
+  }
+
+  .detalles{
+    color:black;
+    width: 784px;
+    height: 37px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36.57px;
+    text-align: center;
+    align-self: center;
+    margin-bottom: 64px;
+  }
+  .ingresa-contrasena{
+    color:black;
+    width: 718px;
+    height: 74px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36.57px;
+    text-align: center;
+    align-self: center;
+    margin-bottom:16px;
+  }
+  .form-confirmacion{
+    width: auto;
+    height: 72px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    margin-bottom:40px;
+  }
+  .password{
+    width: 233px;
+    height: 72px;
+    display: flex;
+    background: white;
+    font-family: Montserrat;
+    border-radius: 10px;
+    border-color: transparent;
+    text-align: center;
+    color:#C7C7C7;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+  .agendar-cita-registro-iniciar-sesion{
+    width: 194px;
+    height: 36px  ;
+    /* display: flex; */
+    background-color:transparent;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    justify-content: center;
+    align-self: center;
+    border-style: inset;
+    border-bottom-color: black ;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    color:black;
+  }
+  .pasos-btn{
+    align-self:center;
+  }
+}

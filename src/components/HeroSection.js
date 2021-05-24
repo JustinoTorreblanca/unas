@@ -39,33 +39,33 @@ function HeroSection() {
         <h2 className="dia cas">y sin salir de casa</h2>
         <div className="inpt">
           <form className="form-hero" onSubmit={enviarDatos}>
-          <input
-            type="text"
-            className="nombre"
-            placeholder="&#x263a; Ingresa tu nombre"
-            required
-            minLength="4"
-            maxLength="10"
-            name="nombre"
-            onChange={handleInputChange}
-          />
-          <input
-            type="email"
-            className="email"
-            placeholder="✉ Ingresa tu correo electrónico"
-            name="correo"
-            onChange={handleInputChange}
-          />
+            <input
+              type="text"
+              className="nombre"
+              placeholder="&#x263a; Ingresa tu nombre"
+              required
+              minLength="4"
+              maxLength="10"
+              name="nombre"
+              onChange={handleInputChange}
+            />
+            <input
+              type="email"
+              className="email"
+              placeholder="✉ Ingresa tu correo electrónico"
+              name="correo"
+              onChange={handleInputChange}
+            />
 
-          <Link to="/agendar-cita" className="link-agendar-cita">
-            <button
-              type="submit"
-              className="agendar-cita"
-              value="Agendar cita"
-            >
-              Agendar cita
-            </button>
-          </Link>
+            <Link to="/pasos" className="link-agendar-cita">
+              <button
+                type="submit"
+                className="agendar-cita"
+                value="Agendar cita"
+              >
+                Agendar cita
+              </button>
+            </Link>
           </form>
           <input
             type="button"

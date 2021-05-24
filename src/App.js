@@ -8,6 +8,8 @@ import Agendar from "./components/Agendar.component";
 import IniciarSesion from "./components/IniciarSesion";
 import PasosAgendar from "./components/PasosAgendar";
 import Nosotros from "./components/Nosotros";
+import Confirmacion from "./components/Confirmacion";
+import MiCuenta from "./components/MiCuenta";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
           <Route path="/inicia-sesion" exact component={IniciarSesion} />
           <Route path="/pasos" exact component={PasosAgendar} />
           <Route path="/nosotros" exact component={Nosotros} />
+          <Route path="/confirmacion" exact component={Confirmacion} />
+          <Route path="/mi-cuenta" exact component={MiCuenta} />
         </Switch>
       </Router>
     </>

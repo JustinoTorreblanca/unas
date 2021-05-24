@@ -26,7 +26,7 @@ function NavbarNegroDesktop() {
     <>
       <IconContext.Provider value={{ color: "black" }}>
         <div className={navbar ? "dnavbar active" : "dnavbar"}>
-          <a href="/" alt="logo">
+          <Link to="/" alt="logo">
             <input
               className="logo-desk-header"
               href="/"
@@ -34,24 +34,24 @@ function NavbarNegroDesktop() {
               alt="log"
               src={clounegro}
             ></input>
-          </a>
+          </Link>
           <div className="cont-desktop-txt">
             <ol className="desktop-txt">
-              <a href="/servicios" className="anchor-servicios">
+              <Link to="/servicios" className="anchor-servicios">
                 <li className="desktop-serv">Servicios</li>
-              </a>
-              <a href="/agendar-cita" className="anchor-servicios">
+              </Link>
+              <Link to="/agendar-cita" className="anchor-servicios">
                 <li className="desktop-cita cita-negro">Agendar Cita</li>
-              </a>
-              <a href="/contacto" className="anchor-servicios">
+              </Link>
+              <Link to="/nosotros" className="anchor-servicios">
                 <li className="desktop-contacto">Contacto</li>
-              </a>
-              <a href="/nosotros" className="anchor-servicios">
+              </Link>
+              <Link to="/nosotros" className="anchor-servicios">
                 <li className="desktop-nosotros">Nosotros</li>
-              </a>
+              </Link>
             </ol>
           </div>
-          <Link to="#" className="desk-menu-bars">
+          <Link to="mi-cuenta" className="desk-menu-bars">
             <BiIcons.BiUserCircle size="2rem" />
           </Link>
         </div>

@@ -1,0 +1,55 @@
+.contenedor{
+  top:0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #c4c4c480;
+  width: 1440px;
+  height: 2029px;
+  position: fixed;
+  padding: 120px 441px 368px;
+}
+.ventana{
+  background-color: white;
+  width: 559px;
+  height: 390px;
+  align-content: center;
+}
+.btn-close-modal{
+  width: 22px;
+  border: none;
+  background: transparent;
+  .img-x-mod{
+    width: 22px;
+    height: 22px;
+    margin-top:25px;
+  }
+}
+.txt-modal-serv{
+  font-size: 30px;
+  line-height: 36.57px;
+  font-weight: 400;
+  width: 398px;
+  height: 74px;
+  margin-bottom: 24px;
+  margin: 70px 82px 24px 83px;
+  text-align:center;
+}
+.btn-eliminar-serv{
+  border: none;
+  background: transparent;
+  border-bottom-style: inset;
+  border-bottom-color: black;
+  border-top-style: transparent;
+  border-right-style: transparent;
+  border-left-style: transparent;
+  padding-bottom: 8px;
+  width: 180px;
+  height: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0px 193px 0px 192px;
+}
+.oculto{
+  display:none;
+}

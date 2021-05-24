@@ -1,0 +1,223 @@
+
+.mis-citas{
+  display: flex;
+  flex-direction: column;
+  width: 766px;
+  height: 490px;
+  align-items: flex-start;
+  margin-left: 100px;
+  margin-top: 40px;
+  .mis-citas-h1{
+    width: 766px;
+    height: 37px;
+    font-size: 30px;
+    line-height: 36.57px;
+    font-weight: 700;
+    color:black;
+  }
+  .cita1{
+    width: 608px;
+    height: 397px;
+    margin-top: 40px;
+    display:flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px 42px 20px 40px;
+    margin-right: 24px;
+    .cita-h1{
+      width: 406px;
+      color: black;
+      font-size: 30px;
+      line-height: 36.57px;
+      font-weight: 400;
+    }
+    .faces{
+      width: 29.33px;
+      height: 29.33px;
+      margin-right: 10.67px;
+    }
+  }
+  .cita-caras{
+    display: flex;
+    flex-direction: row;
+  }
+  .cont-cita-btns{
+    display:flex;
+    flex-direction:column;
+  }
+  .span-cita{
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: black;
+
+  }
+  span.span-cita:last-of-type{
+    margin: 0px;
+  }
+  .cont-btns-cita1, .cont-btns-cita2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 33px;
+    width: 608px;
+    margin-top: 24px;
+    align-items: center;
+  }
+  .btn-cita{
+    margin-top:0px;
+  }
+
+  .btn-modificar{
+    color: black;
+    background: transparent;
+    border: transparent;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    .modificar{
+      width: 26.67px;
+      height: 26.67px;
+      margin-left: 18.67px;
+    }
+    .modificar-cita{
+      color: black;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left:24px;
+    }
+  }
+  .btn-cancelar{
+    background: transparent;
+    border: transparent;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+  }
+  .cancelar{
+    width: 26.67px;
+    height: 26.67px;
+    margin-left: 18.67px;
+  }
+  .cancelar-h3{
+    color: rgba(199, 199, 199, 1);
+    font-size: 20px;
+    font-weight: 500;
+    margin-left:24px;
+  }
+  .container-ver-mas{
+    width:160px;
+    height: 18px;
+    margin-top: 66px;
+    margin-left: 545px;
+    display: flex;
+    justify-content: space-around;
+    font-weight: 700;
+    font-size: 16px;
+    .flecha-izq, .flecha-der{
+      width: 10.41px;
+      height: 18.32px;
+    }
+
+  }
+  .cont-btns-cita2{
+    display:flex;
+  }
+  .contenedor-citas, contenedor-citas2{
+    display:flex;
+    flex-direction:row;
+  }
+  .select-servicio{
+    width: 303px;
+    height:40px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    text-align: center;
+    padding: 9px 16px 11px 16px;
+    border: 1px solid black;
+    margin-bottom: 16px;
+
+    /* QUITAR FLECHA DEFAULT Y AGREGAR OTRA */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: white;
+    background-image: url('../images/selecarrow.png');
+    background-repeat: no-repeat;
+    background-position: right 16px top 50%;
+    background-size: 17px;
+
+  }
+  .select-servicio:focus, .select:hover{
+    outline: none;
+  }
+  .select-servicio option:first-of-type{
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .select-servicio option{
+    background: none;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .eliminar-serv{
+    width: 20px;
+    height: 19px;
+    align-self:center;
+    border: none;
+    background: transparent;
+    margin-left: 125px;
+    margin-top:185px;
+    position: absolute;
+  }
+  .eliminar-serv2{
+    margin-top: 50px;
+    width: 20px;
+    height: 19px;
+    align-self:center;
+    border: none;
+    background: transparent;
+    margin-left: 125px;
+    margin-top:240px;
+    position: absolute;
+  }
+  .btn-add-serv{
+    width: 126px;
+    height: 29.33px;
+    border: none;
+    background: transparent;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    margin-left: 400px;
+    margin-top: 185px;
+  }
+  .registro-otra-per{
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .contenedor-chico, .contenedor-chico2{
+    display: flex;
+    flex-direction: row;
+    .select-servicio, .eliminar-serv-img, .eliminar-serv2, .btn-add-serv{
+      display: none;
+    }
+    .cita1{
+      height: 279px;
+    }
+
+  }
+  .cita1-2{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .btn-smile, .btn-neutral, .btn-sad{
+    border: transparent;
+    background: transparent;
+    width: auto;
+  }
+}

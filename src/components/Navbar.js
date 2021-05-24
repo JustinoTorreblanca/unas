@@ -30,7 +30,7 @@ function Navbar() {
           <Link to="#" className="menu-bars">
             <FaIcons.FaBars size="2rem" color="white" onClick={showSidebar} />
           </Link>
-          <a href="/" alt="logo">
+          <Link to="/" alt="logo">
             <input
               className="logo-header"
               href="/"
@@ -38,7 +38,7 @@ function Navbar() {
               alt="log"
               src={cloublanco}
             ></input>
-          </a>
+          </Link>
         </div>
         <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
           <ul className="nav-menu-items" onClick={showSidebar}>

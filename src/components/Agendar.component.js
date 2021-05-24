@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import NavbarNegroDesktop from "./DesktopNavBar";
 import "./Agendar.styles.scss";
 import FooterDesktop from "./DesktopFooter";
+import {Link} from "react-router-dom";
 
 
 
@@ -54,17 +55,17 @@ function Agendar() {
             placeholder="&#9742; Teléfono*"
             onChange={handleInputChange}
           ></input>
+            <Link to="/pasos">
+              <input
+                type="submit"
+                className="agendar-cita-registro"
+                value="Agendar cita"
+              />
+            </Link>
 
-        {/* <a href="/pasos" className="agendar-cita-registro"> */}
-          <input
-            type="submit"
-            className="agendar-cita-registro"
-            value="Agendar cita"
-            href="/pasos"
-          />{" "}
-        {/* </a> */}
         </form>
-        <a href="/inicia-sesion" className="anchor-iniciar-sesion">
+        <Link to="/inicia-sesion" >
+       {/*  <a href="/inicia-sesion" className="anchor-iniciar-sesion"> */}
           <button
             type="button"
             className="inicia-sesion-registro"
@@ -72,7 +73,7 @@ function Agendar() {
           >
             o inicia sesión
           </button>
-        </a>
+        </Link>
       </div>
       <FooterDesktop />
     </>

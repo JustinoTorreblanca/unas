@@ -1,0 +1,17 @@
+.cont-loader{
+  display: inline-block;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  z-index: 9999;
+}
+.cont-loader--spin{
+  border: solid 0.5rem;
+  border-color: crimson  #ffffff16 #ffffff16;
+  animation: spin 1s infinite linear;
+}
+@keyframes spin{
+  to{
+    transform: rotate(360deg);
+  }
+}

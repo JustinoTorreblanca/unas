@@ -1,13 +1,15 @@
-.modal{
-  width: 100%;
-  height: 100vh;
+.modal-container{
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
-  background: rgba(196, 196, 196, 1);
+  background-color: rgba(196, 196, 196, 1);
   transition: all 500ms ease;
   z-index: 9999;
+  top:0;
+  right: 0;
+  bottom:0;
+  left:0;
 }
 .contendor{
   width: 559px;
@@ -21,7 +23,7 @@
     font-weight: 400;
     font-size: 30px;
     line-height: 36.57px;
-    margin: 40px 217px 24px 62px;
+    margin: 40px 117px 24px 62px;
   }
 
   .img-x{
@@ -66,4 +68,27 @@
     line-height: 24px;
     margin-left:310px;
     margin-top: 25px;
+  }
+
+  .overlay{
+    width: 559 px;
+    height: 390 px;
+    position: absolute;
+    top: 1000px;
+    left: 300px;
+  }
+  .content{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    right: 40px;
+    bottom: 40px;
+    border: 1px solid #ccc;
+    background: #fff;
+    WebkitOverflowScrolling: touch;
+    border-radius: 4px;
+    outline: none;
+    padding: 20px;
+    height: 500px;
+    width: 559px;
   }

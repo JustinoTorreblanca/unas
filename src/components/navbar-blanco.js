@@ -45,12 +45,14 @@ function NavbarNegro() {
               <Link to="#" className="menu-bars">
                 <AiIcons.AiOutlineClose size="2rem" />
               </Link>
+              <Link to={Home}>
               <img
                 src="https://clounailcare.com/static/media/clou-negro.b4d75c75.svg"
                 alt="logo"
                 className="logo-negro"
-                href="/home"
+
               ></img>
+              </Link>
               <Link to={Home}></Link>
             </li>
             {SidebarData.map((item, index) => {

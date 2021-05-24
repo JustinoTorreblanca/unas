@@ -1,0 +1,78 @@
+.container-nuevo-registro{
+  width: 844px;
+  margin-top: 40px;
+  .hr-registro{
+    width:844px;
+    margin-left:-100px;
+    margin-bottom: 40px;
+  }
+  .dropdown-servicio-nuevo{
+    margin-top:0px;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .nombre-cliente-nuevo-reg{
+    text-align: left;
+    font-weight: 400;
+    font-size: 30px;
+  }
+  .wrap-nombre-nuevo-reg{
+    background-color: white;
+    width: 924px;
+    height: auto;
+    margin-top: -40px;
+    padding: 40px 64px 0px 0px;
+    .wrap-nombre-registro{
+      display: flex;
+      flex-direction: row;
+      margin-bottom:25px;
+      .nombre-nuevo-reg{
+        width:292px;
+        font-size: 20px;
+        margin-top: 10px;
+
+        .nombre-nuevo-registro{
+          display:flex;
+          flex-direction: column;
+
+        }
+        .select-nuevo-registro{
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      .opciones-nuevo-reg{
+        width:294px;
+        height: 40px;
+        margin-top:10px;
+      }
+    }
+    .nombre-cliente-container{
+      justify-content: space-between;
+      margin-bottom:40px;
+      .eliminar-persona{
+        border-style: none;
+        background: none;
+        width: auto;
+        height: 22px;
+        color: rgba(199, 199, 199, 1);
+        font-size: 16px;
+      }
+      .img-trash{
+        width: 20px;
+        height: 22px;
+        margin-right: 10px;
+      }
+
+    }
+  }
+  .nombre-registro-inpt{
+    margin-top: 10px;
+    width: 292px;
+    height: 40px;
+    margin-right: 25px;
+  }
+  .contenedor-horario-reg{
+    margin-top:25px;
+  }
+}

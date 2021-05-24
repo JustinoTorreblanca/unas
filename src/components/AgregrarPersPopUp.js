@@ -5,8 +5,18 @@ import cerrar from "../images/x.png";
 import "./PopUpOtraPersona.scss";
 import Agregar from "../images/agregar.png";
 
-const PopUpAgregarOtraPersona = () => {
+const PopUpAgregarOtraPersona = (props) => {
+
   const [buttonOtraPersona, setButtonOtraPersona] = useState(false);
+ /*  const [form, setForm] = useState({  });
+
+  const handleChange = (e) => {
+    setForm({
+      ...form,
+      [e.target.name]: e.target.value,
+    })
+  } */
+
 
   const modalStyles = {
     overlay: {
@@ -22,8 +32,6 @@ const PopUpAgregarOtraPersona = () => {
       left: "40px",
       right: "40px",
       bottom: "40px",
-      border: "1px solid #ccc",
-      background: "#fff",
       WebkitOverflowScrolling: "touch",
       borderRadius: "4px",
       outline: "none",
@@ -49,24 +57,27 @@ const PopUpAgregarOtraPersona = () => {
         style={modalStyles}
       >
         <div className="cont-modal">
-          <img
-            src={cerrar}
-            alt="cerrar"
-            className="close-button"
-            onClick={() => setButtonOtraPersona(false)}
-          />
-          <h1 className="h1-agregas">¿Quién eres?</h1>
-          <input type="radio" name="quien" className="radio-add" />
-          <label className="personas">Persona registrada 1</label>
-          <input type="radio" name="quien" className="radio-add" />
-          <label className="personas">Persona registrada 2</label>
-          <input type="radio" name="quien" className="radio-add" />
-          <label className="personas">Persona registrada 3</label>
-          <input type="radio" name="quien" className="radio-add" />
-          <label className="bold-registrar">Registrar a alguien</label>
-          <button className="continuar-btn" value="Guardar y continuar">
-            Guardar y continuar
-          </button>
+          <div className="card-modal">
+              <img
+                src={cerrar}
+                alt="cerrar"
+                className="close-button"
+                onClick={() => setButtonOtraPersona(false)}
+              />
+              <h1 className="h1-agregas">¿A quién agregas?</h1>
+              <input type="radio" name="a quien agregas" className="radio-add" value="Persona-registrada1" id="Persona-registrada1" onChange={props.handleChange}/>
+              <label className="personas" htmlFor="Persona-registrada1">Persona registrada 1</label>
+              <input type="radio" name="a quien agregas" className="radio-add" value="Persona-registrada2" id="Persona-registrada2" onChange={props.handleChange} />
+              <label className="personas" htmlFor="Persona-registrada2">Persona registrada 2</label>
+              <input type="radio" name="a quien agregas" className="radio-add"  id="Persona-registrada3" value="Persona-registrada3" onChange={props.handleChange} />
+              <label className="personas" htmlFor="Persona-registrada3">Persona registrada 3</label>
+              <input type="radio" name="a quien agregas" className="radio-add" id="Nuevo-registro" value="Nuevo-registro" onChange={props.handleChange} />
+              <label className="bold-registrar" htmlFor="Nuevo-registro">Registrar a alguien</label>
+              <button className="continuar-btn" value="Guardar y continuar" onClick={() => [setButtonOtraPersona(false), props.setVisible(true)]}
+              >
+                Guardar y continuar
+              </button>
+            </div>
         </div>
       </Modal>
     </div>

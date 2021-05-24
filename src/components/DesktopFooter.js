@@ -4,6 +4,7 @@ import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import logonegro from "../images/clou-negro.png";
 import logoshead from "../images/logos.png";
+import { Link } from "react-router-dom";
 
 function FooterDesktop() {
   return (
@@ -16,13 +17,14 @@ function FooterDesktop() {
           <FaIcons.FaFacebook size="2rem" color="black" className="fb" />
           <AiIcons.AiFillInstagram size="2rem" color="black" className="ig" />
         </div>
-
+        <Link to="agendar-cita">
         <input
           type="button"
           className="agendar-cita-footer-desktop"
           value="Agendar cita"
-          href="/"
+
         />
+        </Link>
       </div>
 
       <div className="headtag-desktop">

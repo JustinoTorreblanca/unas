@@ -13,11 +13,14 @@ import PopUpOtraPersona from "./PopUpOtraPersona";
 import PopUpAgregarOtraPersona from "./AgregrarPersPopUp"
 import Calendar from "./Calendar"
 import moment from "moment";
+import NuevoRegistro from "./NuevoRegistro";
+import { Link } from "react-router-dom";
 
 
 function PasosAgendar() {
   const [form, setForm] = useState({  });
   const [value, setValue] = useState(moment());
+  const [visible, setVisible] = useState(false);
 
   const handleChange = (e) => {
     setForm({
@@ -44,66 +47,111 @@ const enviarDatos = (event) => {
     <div className="agendar-container">
       <NavbarNegroDesktop className="navbar-desktop-pasos" />
       <div className="container-pasos">
-
         <div className="zona">
           <span className="titulo-zona">¿En qué zona te encuentras?</span>
           <img src={flechapasos} alt="flecha" className="flecha-pasos"></img>
         </div>
 
         <div className="wrap-radio-buttons">
-        <form className="form-zona" /* onSubmit={enviarDatos} */>
-          <div className="primera-seccion">
-            <input type="radio" className="radio-button" name= "zona" id="polanco" value="Polanco"
-            onChange={handleChange}/>
-            <label htmlFor="polanco">Polanco</label>
-            <input type="radio" className="radio-button" name= "zona" id="lomas" value="Lomas"
-            onChange={handleChange}/>
-            <label htmlFor="lomas">Lomas</label>
-            <input type="radio" className="radio-button" name= "zona" id="santafe" value="Santa Fe"
-            onChange={handleChange}/>
-            <label htmlFor="santafe">Santa Fé</label>
-            <input type="radio" className="radio-button" name= "zona" id="condesa" value="Condesa"
-            onChange={handleChange}/>
-            <label htmlFor="condesa">Condesa</label>
-            <input type="radio" className="radio-button" name= "zona" id="bosques" value="Bosques"
-            onChange={handleChange}/>
-            <label htmlFor="bosques">Bosques</label>
+          <form className="form-zona" /* onSubmit={enviarDatos} */>
+            <div className="primera-seccion">
+              <input
+                type="radio"
+                className="radio-button"
+                name="zona"
+                id="polanco"
+                value="Polanco"
+                onChange={handleChange}
+              />
+              <label htmlFor="polanco">Polanco</label>
+              <input
+                type="radio"
+                className="radio-button"
+                name="zona"
+                id="lomas"
+                value="Lomas"
+                onChange={handleChange}
+              />
+              <label htmlFor="lomas">Lomas</label>
+              <input
+                type="radio"
+                className="radio-button"
+                name="zona"
+                id="santafe"
+                value="Santa Fe"
+                onChange={handleChange}
+              />
+              <label htmlFor="santafe">Santa Fé</label>
+              <input
+                type="radio"
+                className="radio-button"
+                name="zona"
+                id="condesa"
+                value="Condesa"
+                onChange={handleChange}
+              />
+              <label htmlFor="condesa">Condesa</label>
+              <input
+                type="radio"
+                className="radio-button"
+                name="zona"
+                id="bosques"
+                value="Bosques"
+                onChange={handleChange}
+              />
+              <label htmlFor="bosques">Bosques</label>
+            </div>
 
-          </div>
-
-          <div className="segunda-seccion">
-            <input type="radio" className="radio-button" name= "zona" id="interlomas" value="Interlomas"
-            onChange={handleChange}/>
-            <label htmlFor="interlomas">Interlomas</label>
-            <input type="radio" className="radio-button" name= "zona" id="tecamachalco" value="Tecamachalco"
-            onChange={handleChange}/>
-            <label htmlFor="tecamachalco">Tecamachalco</label>
-            <input type="radio" className="radio-button" name= "zona" id="olivo" value="Olivo"
-            onChange={handleChange}/>
-            <label htmlFor="olivo">El Olivo</label>
-          </div>
-          <div className="tercera-seccion">
-            <input
-              type="radio"
-              value="El Chamizal"
-              className="radio-button"
-              id="chamizal"
-              name= "zona"
-              onChange={handleChange}
-
-            />
-            <label htmlFor="chamizal">El Chamizal</label>
-            <input
-              type="radio"
-              value="Plaza Carzo"
-              className="radio-button"
-              id="carzo"
-              name= "zona"
-              onChange={handleChange}
-            />
-            <label htmlFor="carzo">Plaza Carzo</label>
-          </div>
-        </form>
+            <div className="segunda-seccion">
+              <input
+                type="radio"
+                className="radio-button"
+                name="zona"
+                id="interlomas"
+                value="Interlomas"
+                onChange={handleChange}
+              />
+              <label htmlFor="interlomas">Interlomas</label>
+              <input
+                type="radio"
+                className="radio-button"
+                name="zona"
+                id="tecamachalco"
+                value="Tecamachalco"
+                onChange={handleChange}
+              />
+              <label htmlFor="tecamachalco">Tecamachalco</label>
+              <input
+                type="radio"
+                className="radio-button"
+                name="zona"
+                id="olivo"
+                value="Olivo"
+                onChange={handleChange}
+              />
+              <label htmlFor="olivo">El Olivo</label>
+            </div>
+            <div className="tercera-seccion">
+              <input
+                type="radio"
+                value="El Chamizal"
+                className="radio-button"
+                id="chamizal"
+                name="zona"
+                onChange={handleChange}
+              />
+              <label htmlFor="chamizal">El Chamizal</label>
+              <input
+                type="radio"
+                value="Plaza Carzo"
+                className="radio-button"
+                id="carzo"
+                name="zona"
+                onChange={handleChange}
+              />
+              <label htmlFor="carzo">Plaza Carzo</label>
+            </div>
+          </form>
         </div>
       </div>
 
@@ -115,7 +163,7 @@ const enviarDatos = (event) => {
         <div className="wrap-calendar">
           {/* <CalendarComponent /> */}
 
-          <Calendar value={value} onChange={setValue}/>
+          <Calendar value={value} onChange={setValue} />
         </div>
       </div>
 
@@ -128,23 +176,35 @@ const enviarDatos = (event) => {
           <div className="nombre-cliente-container">
             <h1 className="nombre-cliente">Nombre cliente Clou</h1>
 
-            <PopUpOtraPersona />
+            <PopUpOtraPersona  handleChange={handleChange} setVisible={setVisible}/>
+
+
           </div>
           <form className="form-servicio">
             <label className="dropdown-servicio">Servicio*</label>
-            <select className="opciones-servicio" defaultValue="" onChange={handleChange} name="servicio">
-              <option value="" >- - -</option>
-              <option value="Spa polish" >Combo Spa Polish</option>
-              <option value="Spa gel" >Combo Spa Gel</option>
-              <option value="Spa mix" >Combo Spa Mix</option>
-              <option value="Combo spa" >Combo Spa</option>
+            <select
+              className="opciones-servicio"
+              defaultValue=""
+              onChange={handleChange}
+              name="servicio"
+            >
+              <option value="">- - -</option>
+              <option value="Spa polish">Combo Spa Polish</option>
+              <option value="Spa gel">Combo Spa Gel</option>
+              <option value="Spa mix">Combo Spa Mix</option>
+              <option value="Combo spa">Combo Spa</option>
             </select>
             <br></br>
           </form>
           <div className="wrap-horario">
             <div className="contenedor-horario">
               <label className="dropdown-horario">Horario</label>
-              <select className="opciones-horario" defaultValue="" onChange={handleChange} name="horario">
+              <select
+                className="opciones-horario"
+                defaultValue=""
+                onChange={handleChange}
+                name="horario"
+              >
                 <option value="">- - -</option>
                 <option value="14">14:00hrs</option>
                 <option value="15">15:00hrs</option>
@@ -155,11 +215,17 @@ const enviarDatos = (event) => {
                 <option value="20">20:00hrs</option>
               </select>
             </div>
+
             <div className="contenedor-quien">
               <label className="dropdown-quien">
                 ¿Quién me dará el servicio?*
               </label>
-              <select className="opciones-quien" defaultValue="" onChange={handleChange} name="quien">
+              <select
+                className="opciones-quien"
+                defaultValue=""
+                onChange={handleChange}
+                name="quien"
+              >
                 <option value="">- - -</option>
                 <option value="Elisa">Elisa</option>
                 <option value="Alejandra">Alejandra</option>
@@ -168,9 +234,10 @@ const enviarDatos = (event) => {
               </select>
             </div>
           </div>
+          {visible ? <NuevoRegistro setVisible={setVisible} handleChange={handleChange}/> : null}
 
-          <PopUpAgregarOtraPersona />
-
+         {/*  <NuevoRegistro /> */}
+          <PopUpAgregarOtraPersona  handleChange={handleChange} setVisible={setVisible}/>
         </div>
       </div>
       <div className="es-regalo">
@@ -184,7 +251,9 @@ const enviarDatos = (event) => {
             onChange={handleChange}
             name="regalo"
           />
-          <label htmlFor="si" className="si-regalo">Si</label>
+          <label htmlFor="si" className="si-regalo">
+            Si
+          </label>
           <input
             type="radio"
             value="no"
@@ -200,54 +269,71 @@ const enviarDatos = (event) => {
       {/* DATOS PARA REGALO */}
       <div className="container-datos-regalo">
         <form /* onSubmit={handleSubmit(onSubmit)} */>
-        <div className="zona-dia">
-          <span className="titulo-dia titulo-regalo">Datos para regalo</span>
-          <img src={flechapasos} alt="flecha" className="flecha-pasos"></img>
-        </div>
-        <div className="wrap-pasos-regalo">
-          <div className="container-nombre-regalo">
-            <label className="nombre-pasos-regalo">Nombre</label>
-            <input type="text" className="nombre-regalo-inpt" name="nombre para regalo" onChange={handleChange}/* ref={register({required: {value: true, message: 'Campo Requerido'}})} */ ></input>
-            {/* <div>
+          <div className="zona-dia">
+            <span className="titulo-dia titulo-regalo">Datos para regalo</span>
+            <img src={flechapasos} alt="flecha" className="flecha-pasos"></img>
+          </div>
+          <div className="wrap-pasos-regalo">
+            <div className="container-nombre-regalo">
+              <label className="nombre-pasos-regalo">Nombre</label>
+              <input
+                type="text"
+                className="nombre-regalo-inpt"
+                name="nombre para regalo"
+                onChange={
+                  handleChange
+                } /* ref={register({required: {value: true, message: 'Campo Requerido'}})} */
+              ></input>
+              {/* <div>
               {errors?.name?.message}
             </div> */}
-          </div>
-          <div className="container-correo-pasos">
-            <label className="correo-pasos-regalo">Correo electrónico*</label>
-            <input className="correo-regalo-inpt" name="email para regalo" onChange={handleChange}/* ref={register({required: {value: true, message: 'Campo Requerido'}})} */></input>
-            {/* <div>
+            </div>
+            <div className="container-correo-pasos">
+              <label className="correo-pasos-regalo">Correo electrónico*</label>
+              <input
+                className="correo-regalo-inpt"
+                name="email para regalo"
+                onChange={
+                  handleChange
+                } /* ref={register({required: {value: true, message: 'Campo Requerido'}})} */
+              ></input>
+              {/* <div>
               {errors?.email?.message}
             </div> */}
+            </div>
           </div>
-        </div>
-        <div className="container-direccion-pasos">
-          <label className="direccion-regalo">Dirección</label>
-          <input className="direccion-regalo-inpt" name="direccion para regalo" onChange={handleChange}/* ref={register({required: {value: true, message: 'Campo Requerido'}})} *//>
-          {/* <div>
+          <div className="container-direccion-pasos">
+            <label className="direccion-regalo">Dirección</label>
+            <input
+              className="direccion-regalo-inpt"
+              name="direccion para regalo"
+              onChange={
+                handleChange
+              } /* ref={register({required: {value: true, message: 'Campo Requerido'}})} */
+            />
+            {/* <div>
               {errors?.address?.message}
             </div> */}
-        </div>
-      </form>
-
+          </div>
+        </form>
       </div>
 
       {/* METODO DE PAGO */}
-      <CardMetodoPago handleChange={handleChange}/>
+      <CardMetodoPago handleChange={handleChange} />
 
       {/* DOMICILIO */}
-      <CardDomicilio handleChange={handleChange}/>
-
-
+      <CardDomicilio handleChange={handleChange} />
 
       <div className="cont-boton-guardar">
         {/* <a href="/" className="anchor-pasos"> */}
-          <input
-            type="submit"
-            className="agendar-guardar-pasos"
-            value="Guardar y agendar cita"
-
-          />
-       {/*  </a> */}
+        <Link to="confirmacion">
+        <input
+          type="submit"
+          className="agendar-guardar-pasos"
+          value="Guardar y agendar cita"
+        />
+        </Link>
+        {/*  </a> */}
       </div>
 
       <FooterDesktop />
